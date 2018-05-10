@@ -1,0 +1,19 @@
+{
+  "name": "frontend",
+  "version": "1.1.0",
+  "description": "basic",
+  "author": "",
+  "dependencies": {
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-uglify": "^1.1.0",
+    "gulp-watch": "^4.3.5",
+    "gulp-cached": "^1.1.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-html-replace": "*",
+    "gulp-sass": "*"
+  }
+}

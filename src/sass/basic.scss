@@ -1,0 +1,170 @@
+/* helping adds*/
+
+.clear{clear:both;font-size:1px;line-height:1px;height:0;overflow:hidden;}
+.cfix:after{content: '';display: block;height: 0;font-size: 1px;line-height: 1px;overflow: hidden;clear: both;}
+.juster{display:inline-block;width:100%;height:0;overflow:hidden;}
+.jfix-after:after{content: '';display: inline-block;width: 100%;height: 0;overflow: hidden;}
+.vfix{height:100%;width:0px;display:inline-block;vertical-align:middle;}
+.vfix-before:before{content: '';height: 100%;width: 0;display: inline-block;vertical-align: middle;}
+
+.hidden-block{position:absolute;left:-99999em;top:-99999em;}
+
+/* /helping adds*/
+
+/* ctext */
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* /ctext */
+
+/* base styles*/
+*,*:before, *:after{box-sizing:border-box;outline:none;}
+*,body,html{-webkit-text-size-adjust: none;-webkit-appearance: none;max-height: 9001em;}
+
+html{height:100%;}
+body{min-height:100%;width:100%;min-width:320px;font-family: 'Roboto',  arial,sans-serif;background:#fff;color:#3d3d3d;position:relative;font-size: 16px;line-height: 1; overflow-x: hidden;}
+
+img{vertical-align:bottom;border:0;max-width:100%;}
+
+/* /base styles */
+
+/* wraps styling*/
+
+.mbox{max-width:1024px;width:100%; padding: 0 15px; margin:0 auto; position:relative; z-index:1;}
+/* /wraps styling*/
+
+input, textarea{
+    &::-webkit-input-placeholder {color: inherit;}
+    &:-moz-placeholder {color: inherit;opacity:1;}
+    &::-moz-placeholder {color: inherit;opacity:1;}
+    &:-ms-input-placeholder {color: inherit;}
+}
+
+/*End Layout*/
+
+/*fonts*/
+@mixin font-face($style-name, $file:$style-name, $weight:normal, $style:normal) {
+    $filepath: "../fonts/" + $file;
+    @font-face {
+        font-family: quote($style-name);
+        src: url($filepath + ".eot");
+        src: url($filepath + ".eot?#iefix") format('embedded-opentype'),
+        url($filepath + ".woff") format('woff'),
+        url($filepath + ".ttf")  format('truetype'),
+        url($filepath + ".svg#" + $style-name + "") format('svg');
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+//  example -> @include font-face('PFDinTextPro', 'PFDinTextPro-Bold', 700, italic);
+
+
+/*/fonts*/
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-ExtraBold.eot');
+    src: url('../fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-ExtraBold.woff') format('woff'),
+        url('../fonts/Gilroy-ExtraBold.ttf') format('truetype'),
+        url('../fonts/Gilroy-ExtraBold.svg#Gilroy-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Light.eot');
+    src: url('../fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Light.woff') format('woff'),
+        url('../fonts/Gilroy-Light.ttf') format('truetype'),
+        url('../fonts/Gilroy-Light.svg#Gilroy-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vremena';
+    src: url('../fonts/VremenaBold.eot');
+    src: url('../fonts/VremenaBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VremenaBold.woff') format('woff'),
+        url('../fonts/VremenaBold.ttf') format('truetype'),
+        url('../fonts/VremenaBold.svg#VremenaBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vremena';
+    src: url('../fonts/VremenaBook.eot');
+    src: url('../fonts/VremenaBook.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VremenaBook.woff') format('woff'),
+        url('../fonts/VremenaBook.ttf') format('truetype'),
+        url('../fonts/VremenaBook.svg#VremenaBook') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vremena';
+    src: url('../fonts/Vremena.eot');
+    src: url('../fonts/Vremena.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vremena.woff') format('woff'),
+        url('../fonts/Vremena.ttf') format('truetype'),
+        url('../fonts/Vremena.svg#Vremena') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vremena';
+    src: url('../fonts/VremenaMedium.eot');
+    src: url('../fonts/VremenaMedium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VremenaMedium.woff') format('woff'),
+        url('../fonts/VremenaMedium.ttf') format('truetype'),
+        url('../fonts/VremenaMedium.svg#VremenaMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vremena';
+    src: url('../fonts/VremenaBookItalic.eot');
+    src: url('../fonts/VremenaBookItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VremenaBookItalic.woff') format('woff'),
+        url('../fonts/VremenaBookItalic.ttf') format('truetype'),
+        url('../fonts/VremenaBookItalic.svg#VremenaBookItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Vremena';
+    src: url('../fonts/VremenaBoldItalic.eot');
+    src: url('../fonts/VremenaBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VremenaBoldItalic.woff') format('woff'),
+        url('../fonts/VremenaBoldItalic.ttf') format('truetype'),
+        url('../fonts/VremenaBoldItalic.svg#VremenaBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Vremena';
+    src: url('../fonts/VremenaItalic.eot');
+    src: url('../fonts/VremenaItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VremenaItalic.woff') format('woff'),
+        url('../fonts/VremenaItalic.ttf') format('truetype'),
+        url('../fonts/VremenaItalic.svg#VremenaItalic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+

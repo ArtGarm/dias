@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebArtG</title>
+    <link rel="shortcut icon" href="images/favico.png" type="image/png">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- build:css -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/znormalize.css">    
+    <link rel="stylesheet" href="css/select2.min.css"> 
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.fullpage.css">
+    <link rel="stylesheet" href="css/flickity.css">
+    <link rel="stylesheet" href="css/nouislider.css">
+    
+    <!-- add new file here -->
+
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/main_styles.css">
+    <link rel="stylesheet" href="css/main_adapt.css">
+    <link rel="stylesheet" href="css/Xcustom.css">
+    <link rel="stylesheet" href="css/Xcustom_adapt.css">
+    <!-- endbuild -->
+
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" href="https://rawgit.com/codefucker/finalReject/master/reject/reject.css" media="all" />
+    <script type="text/javascript" src="https://rawgit.com/codefucker/finalReject/master/reject/reject.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="global-wrapper">
+    
+
+    <div class="scroller-count" id="scrolldown">
+        <div class="to-upper">
+            <div class="arrow">
+                <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.3536 0.353553C15.5488 0.158291 15.5488 -0.158291 15.3536 -0.353553L12.1716 -3.53553C11.9763 -3.7308 11.6597 -3.7308 11.4645 -3.53553C11.2692 -3.34027 11.2692 -3.02369 11.4645 -2.82843L14.2929 0L11.4645 2.82843C11.2692 3.02369 11.2692 3.34027 11.4645 3.53553C11.6597 3.7308 11.9763 3.7308 12.1716 3.53553L15.3536 0.353553ZM0 0.5H15V-0.5H0V0.5Z" transform="translate(4 16) scale(1 -1) rotate(90)" />
+                </svg>                         
+            </div>       
+        </div>
+        <div class="middle">
+            <div class="pointer">
+                <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.19272 0C-0.177802 0 0.00851404 1.1288 0.00851404 2.52V2.7C0.00851404 4.092 -0.177802 4.7064 1.19272 4.7064C2.56009 4.7064 2.37694 4.092 2.37694 2.7V2.52C2.37694 1.1288 2.56009 0 1.19272 0Z" transform="translate(6.30725 4.5)" />
+                    <path d="M7.5 0C3.41921 0 0 3.3648 0 7.5V16.5C0 20.6352 3.41921 24 7.5 24C11.5808 24 15 20.6352 15 16.5V7.5C15 3.3648 11.5808 0 7.5 0ZM13.4211 16.5C13.4211 19.8088 10.7653 22.5 7.5 22.5C4.23474 22.5 1.57895 19.8088 1.57895 16.5V7.5C1.57895 4.192 4.23474 1.5 7.5 1.5C10.7653 1.5 13.4211 4.192 13.4211 7.5V16.5Z" />
+                </svg>    
+            </div>       
+        </div>
+        <div class="to-bottomer">
+            <div class="arrow">
+                <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.3536 0.353553C15.5488 0.158291 15.5488 -0.158291 15.3536 -0.353553L12.1716 -3.53553C11.9763 -3.7308 11.6597 -3.7308 11.4645 -3.53553C11.2692 -3.34027 11.2692 -3.02369 11.4645 -2.82843L14.2929 0L11.4645 2.82843C11.2692 3.02369 11.2692 3.34027 11.4645 3.53553C11.6597 3.7308 11.9763 3.7308 12.1716 3.53553L15.3536 0.353553ZM0 0.5H15V-0.5H0V0.5Z" transform="translate(4) rotate(90)"/>
+                </svg>                                            
+            </div>    
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main" id="fullpage">
+        <!-- add partials here -->
+
+        <div class="section" id="section1" style="background-color: #fff;">
+            <header>
+                <div class="contein">
+                    <div class="siders">
+                        <div class="left">
+                            <div class="butter-wrapper">
+                                <div class="butter">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="images/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="place">
+                                <p> м.Львів вул. Городоцька, 42 </p>
+                            </div>
+                            <div class="tell">
+                                <a href="tel:+380633225123">  +38 (063) 322-51-23 </a>
+                            </div>
+                            <div class="popup-butt">
+                                <a data-fancybox="" data-src="#call-popup" href="javascript:;" class="butt2">
+                                    <span>Онлайн-запис</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <div id="hidden-menu">
+                <div class="closer">
+                    <span></span>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="http://"> Головна </a>
+                        </li>
+                        <li>
+                            <a href="http://"> Косметологія </a>
+                            <ul style="background-image: url(images/second-layer-menu.jpg);">
+                                <li>
+                                    <a href="http://"> Очищення шкіри </a>
+                                </li>
+                                <li>
+                                    <a href="http://"> Догляд за шкірою </a>
+                                </li>
+                                <li>
+                                    <a href="http://"> Ін’єкційні методики  </a>
+                                </li>
+                                <li>
+                                    <a href="http://"> Апаратні методики </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://"> Корекція фігури </a>
+                        </li>
+                        <li>
+                            <a href="http://"> Послуги </a>
+                            <ul style="background-image: url(images/second-layer-menu.jpg);">
+                                <li>
+                                    <a href="http://"> Очищення шкіри 1111 </a>
+                                </li>
+                                <li>
+                                    <a href="http://"> Догляд за шкірою 1111 </a>
+                                </li>
+                                <li>
+                                    <a href="http://"> Ін’єкційні методики 1111 </a>
+                                </li>
+                                <li>
+                                    <a href="http://"> Апаратні методики 111 </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://"> Школа </a>
+                        </li>
+                        <li>
+                            <a href="http://"> Інтернет-магазин </a>
+                        </li>
+                        <li>
+                            <a href="http://"> Про нас </a>
+                        </li>
+                        <li>
+                            <a href="http://"> Новини </a>
+                        </li>
+                        <li>
+                            <a href="http://"> Контакти </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="conteiner first-wrap">
+                <div class="siders">
+                    <div class="infopart">
+                        <div class="slider-generator">
+                            <div class="convert-item">
+                                <div class="text-part">
+                                    <h1>1111 Ми знаємо, як підкреслити твої найкращі риси</h1>
+                                </div>
+                                <div class="under-texter">   
+                                    <div class="transformed"> <span> ми творимо красу! </span> </div>                     
+                                    <div class="texter">                            
+                                        <p>Косметичні процедури, макіяж, манікюр, педікюр, масаж, перукарські послуги - все це і багато іншого пропонує наша студія краси. </p>
+                                    </div>
+                                    <div class="button-row">
+                                        <a data-fancybox data-src="#call-popup" href="javascript:;" class="butt">
+                                            <span>Записатись</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="convert-item">
+                                <div class="text-part">
+                                    <h1>2222 Ми знаємо, як підкреслити твої найкращі риси</h1>
+                                </div>
+                                <div class="under-texter">
+                                    <div class="transformed"> <span> ми творимо красу! </span> </div>   
+                                    <div class="texter">
+                                        <p>Косметичні процедури, макіяж, манікюр, педікюр, масаж, перукарські послуги - все це і багато іншого пропонує наша студія краси. </p>
+                                    </div>
+                                    <div class="button-row">
+                                        <a data-fancybox data-src="#call-popup" href="javascript:;" class="butt">
+                                            <span>Записатись</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="convert-item">
+                                <div class="text-part">
+                                    <h1>333 Ми знаємо, як підкреслити твої найкращі риси</h1>
+                                </div>
+                                <div class="under-texter">
+                                    <div class="transformed"> <span> ми творимо красу! </span> </div>   
+                                    <div class="texter">
+                                        <p>Косметичні процедури, макіяж, манікюр, педікюр, масаж, перукарські послуги - все це і багато іншого пропонує наша студія краси. </p>
+                                    </div>
+                                    <div class="button-row">
+                                        <a data-fancybox data-src="#call-popup" href="javascript:;" class="butt">
+                                            <span>Записатись</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="convert-item">
+                                <div class="text-part">
+                                    <h1>444 Ми знаємо, як підкреслити твої найкращі риси</h1>
+                                </div>
+                                <div class="under-texter">
+                                    <div class="transformed"> <span> ми творимо красу! </span> </div>   
+                                    <div class="texter">
+                                        <p>Косметичні процедури, макіяж, манікюр, педікюр, масаж, перукарські послуги - все це і багато іншого пропонує наша студія краси. </p>
+                                    </div>
+                                    <div class="button-row">
+                                        <a data-fancybox data-src="#call-popup" href="javascript:;" class="butt">
+                                            <span>Записатись</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>           
+                    </div>
+                    <div class="imagepart">
+                        <div class="carousel" id="carousel">
+                            <div class="carousel-cell">
+                                <div class="imager" style="background-image: url(images/slider1.jpg);"></div>
+                            </div>
+                            <div class="carousel-cell">
+                                <div class="imager" style="background-image: url(images/slider2.jpg);"></div>
+                            </div>
+                            <div class="carousel-cell">
+                                <div class="imager" style="background-image: url(images/slider1.jpg);"></div>
+                            </div>
+                            <div class="carousel-cell">
+                                <div class="imager" style="background-image: url(images/slider2.jpg);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="socials">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="section"id="section2" style="background-color: #fff;">
+
+            <div class="main-second-wrap">
+                <div class="conteiner">
+                    <div class="siders">            
+                        <div class="imagepart">
+                            <div class="con">
+                                <img src="images/main-second-image.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="infopart">
+                            <div class="convert-list-proc">
+                                <div class="list-proc">
+                                    <ul>
+                                        <li>
+                                            <a href="#"> Косметологія обличчя </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> Корекція фігури </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> SPA – процедури </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> Перукарські послуги </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> Пресотерапія </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> Манікюр. Педикюр </a>
+                                        </li>
+                                    </ul>
+                                    <div class="readmore">
+                                        <a href="#" class="more">
+                                            <span>Більше послуг</span>
+                                            <svg width="31" height="8" viewBox="0 0 31 8" version="1.1" xmlns="http://www.w3.org/2000/svg"                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g >
+                                                    <path d="M 30.3536 0.353553C 30.5488 0.158291 30.5488 -0.158291 30.3536 -0.353553L 27.1716 -3.53553C 26.9763 -3.7308 26.6597 -3.7308 26.4645 -3.53553C 26.2692 -3.34027 26.2692 -3.02369 26.4645 -2.82843L 29.2929 0L 26.4645 2.82843C 26.2692 3.02369 26.2692 3.34027 26.4645 3.53553C 26.6597 3.7308 26.9763 3.7308 27.1716 3.53553L 30.3536 0.353553ZM 0 0.5L 30 0.5L 30 -0.5L 0 -0.5L 0 0.5Z" transform="translate(0 4)" fill="#E71938"/>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="after-text">
+                                    <p>Всі інтрументи стерилизовані у медичному автоклаві</p>
+                                </div>
+                                <div class="translator"> Наші послуги  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="section" id="section3" style="background-color: #fff;">
+            <div class="main-third-wrap">
+                <div class="conteiner">
+                    <div class="siders">  
+                        <div class="infopart">
+                            <div class="simple-texter">
+                                <div class="texter">
+                                    <h2> Чому апарат Power Shape – найкращій засіб для омолодження на схуднення? </h2>
+                                    <p>Power Shape – це абсолютна новинка в області методів нейрохірургічного усунення жирових відкладень та вирішення проблем, пов’язаних зі зниженням тонусу шкіри</p>
+                                    <h3>Power Shape усуває наступні проблеми:</h3>
+                                    <ul>
+                                        <li> Зморшки на обличчі та зоні декольте, мішки під очима </li>
+                                        <li> Дряблість шкіри </li>
+                                        <li> Розтяжки на шкірі </li>
+                                        <li> Ожиріння </li>
+                                        <li> Целюліт </li>
+                                        <li> Локальні жирові відкладення </li>
+                                        <li> Набрякання </li>
+                                    </ul>
+                                </div>
+                                <div class="after-button">
+                                    <a href="#" class="butt">
+                                        <span>Послуги та ціни на PowerShape</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>          
+                        <div class="imagepart">
+                            <div class="con">
+                                <img src="images/main-third-image.jpg" alt="">
+                            </div>
+                        </div>            
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section4" style="background-color: #fff;">
+            <div class="main-fourth-wrap">
+                <div class="contein">
+                    <div class="navigate">
+                        <div class="convert">
+                            <ul>
+                                <li>
+                                    <a href="#" class="active"> Школа </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Семінари </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Салон під ключ </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-part">
+                        <ul>
+                            <li class="active">
+                                <div class="item" style="background-image: url(images/bg-video.jpg);">
+                                    <div class="text-part">
+                                        <div class="texter">
+                                            <h2> Школа краси </h2>
+                                            <h3><i>Єдина у Львові ліцензована школа</i></h3>
+                                            <br />
+                                            <p>«Dias» – це ліцензована школа краси у Львові, за результатом навчання в якій ви стаєте власником диплому ліцензованого диплому на двох мовах – англійській та українській, що є гарантом гідного працевлаштування і в Україні, і за кордоном.</p>
+                                            <br />
+                                            <ul>
+                                                <li>Курси перукарів-стилістів</li>
+                                                <li>Курси візажистів</li>
+                                                <li>Курси масажистів</li>
+                                                <li>Курси нігтьової естетики</li>
+                                            </ul>
+                                        </div>
+                                        <div class="after-button">
+                                            <a data-fancybox="" data-src="#call-popup" href="javascript:;" class="butt">
+                                                <span>Записатись на пробне заняття</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="video-button">
+                                        <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="circle-butt">
+                                            <div class="insider">
+                                                <div class="triangle">
+                                                    <svg width="19" height="21" viewBox="0 0 19 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <path d="M -1.14039e-07 19.9217C -1.14039e-07 20.8822 0.700222 21.2753 1.55682 20.7951L 18.3576 11.3723C 19.2141 10.892 19.2141 10.1058 18.3576 9.62663L 1.55682 0.204923C 0.700222 -0.27532 -1.14039e-07 0.11781 -1.14039e-07 1.0783L -1.14039e-07 19.9217Z" fill="#E71938"/>
+                                                    </svg>                                                
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item" style="background-image: url(images/bg-video.jpg);">
+                                    <div class="text-part">
+                                        <div class="texter">
+                                            <h2> Школа краси </h2>
+                                            <h3><i>Єдина у Львові ліцензована школа</i></h3>
+                                            <br />
+                                            <p>«Dias» – це ліцензована школа краси у Львові, за результатом навчання в якій ви стаєте власником диплому ліцензованого диплому на двох мовах – англійській та українській, що є гарантом гідного працевлаштування і в Україні, і за кордоном.</p>
+                                            <br />
+                                            <ul>
+                                                <li>Курси перукарів-стилістів</li>
+                                                <li>Курси візажистів</li>
+                                                <li>Курси масажистів</li>
+                                                <li>Курси нігтьової естетики</li>
+                                            </ul>
+                                        </div>
+                                        <div class="after-button">
+                                            <a data-fancybox="" data-src="#call-popup" href="javascript:;" class="butt">
+                                                <span>Записатись на пробне заняття</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="video-button">
+                                        <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="circle-butt">
+                                            <div class="insider">
+                                                <div class="triangle">
+                                                    <svg width="19" height="21" viewBox="0 0 19 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <path d="M -1.14039e-07 19.9217C -1.14039e-07 20.8822 0.700222 21.2753 1.55682 20.7951L 18.3576 11.3723C 19.2141 10.892 19.2141 10.1058 18.3576 9.62663L 1.55682 0.204923C 0.700222 -0.27532 -1.14039e-07 0.11781 -1.14039e-07 1.0783L -1.14039e-07 19.9217Z" fill="#E71938"/>
+                                                    </svg>                                                
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item" style="background-image: url(images/bg-video.jpg);">
+                                    <div class="text-part">
+                                        <div class="texter">
+                                            <h2> Школа краси </h2>
+                                            <h3><i>Єдина у Львові ліцензована школа</i></h3>
+                                            <br />
+                                            <p>«Dias» – це ліцензована школа краси у Львові, за результатом навчання в якій ви стаєте власником диплому ліцензованого диплому на двох мовах – англійській та українській, що є гарантом гідного працевлаштування і в Україні, і за кордоном.</p>
+                                            <br />
+                                            <ul>
+                                                <li>Курси перукарів-стилістів</li>
+                                                <li>Курси візажистів</li>
+                                                <li>Курси масажистів</li>
+                                                <li>Курси нігтьової естетики</li>
+                                            </ul>
+                                        </div>
+                                        <div class="after-button">
+                                            <a data-fancybox="" data-src="#call-popup" href="javascript:;" class="butt">
+                                                <span>Записатись на пробне заняття</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="video-button">
+                                        <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="circle-butt">
+                                            <div class="insider">
+                                                <div class="triangle">
+                                                    <svg width="19" height="21" viewBox="0 0 19 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <path d="M -1.14039e-07 19.9217C -1.14039e-07 20.8822 0.700222 21.2753 1.55682 20.7951L 18.3576 11.3723C 19.2141 10.892 19.2141 10.1058 18.3576 9.62663L 1.55682 0.204923C 0.700222 -0.27532 -1.14039e-07 0.11781 -1.14039e-07 1.0783L -1.14039e-07 19.9217Z" fill="#E71938"/>
+                                                    </svg>                                                
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section5" style="background-color: #F2F2F2;">
+            <div class="main-catalog-wrap">
+                <div class="conteiner full-size">
+                    <div class="title-part">
+                        <h2>Інтернет-магазин “DIAS”</h2>
+                        <p>Власний бренд ексклюзивних професійних засобів, <br /> інструменту та косметики.</p>
+                    </div>
+                    <div class="catalog-part">
+                        <div class="list-items">
+                            <div class="item">
+                                <div class="contein">
+                                    <a href="#" class="con">
+                                        <img src="images/single-towar.png" alt="">
+                                    </a>
+                                    <div class="text-part">
+                                        <div class="type">
+                                            <a href="#">Лечебная косметика</a>
+                                        </div>
+                                        <div class="name">
+                                            <a href="#"> Маскирующий и лечебный консилер  </a>
+                                        </div>
+                                        <div class="price">  434 грн  </div>
+                                        <div class="after-butt">
+                                            <a href="#" class="butt3">
+                                                <span>Замовити</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="contein">
+                                    <a href="#" class="con">
+                                        <img src="images/single-towar.png" alt="">
+                                    </a>
+                                    <div class="text-part">
+                                        <div class="type">
+                                            <a href="#">Лечебная косметика</a>
+                                        </div>
+                                        <div class="name">
+                                            <a href="#"> Маскирующий и лечебный консилер  </a>
+                                        </div>
+                                        <div class="price">  434 грн  </div>
+                                        <div class="after-butt">
+                                            <a href="#" class="butt3">
+                                                <span>Замовити</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="contein">
+                                    <a href="#" class="con">
+                                        <img src="images/single-towar.png" alt="">
+                                    </a>
+                                    <div class="text-part">
+                                        <div class="type">
+                                            <a href="#">Лечебная косметика</a>
+                                        </div>
+                                        <div class="name">
+                                            <a href="#"> Маскирующий и лечебный консилер  </a>
+                                        </div>
+                                        <div class="price">  434 грн  </div>
+                                        <div class="after-butt">
+                                            <a href="#" class="butt3">
+                                                <span>Замовити</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="contein">
+                                    <a href="#" class="con">
+                                        <img src="images/single-towar.png" alt="">
+                                    </a>
+                                    <div class="text-part">
+                                        <div class="type">
+                                            <a href="#">Лечебная косметика</a>
+                                        </div>
+                                        <div class="name">
+                                            <a href="#"> Маскирующий и лечебный консилер  </a>
+                                        </div>
+                                        <div class="price">  434 грн  </div>
+                                        <div class="after-butt">
+                                            <a href="#" class="butt3">
+                                                <span>Замовити</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="item">
+                                <div class="contein">
+                                    <a href="#" class="con">
+                                        <img src="images/single-towar.png" alt="">
+                                    </a>
+                                    <div class="text-part">
+                                        <div class="type">
+                                            <a href="#">Лечебная косметика</a>
+                                        </div>
+                                        <div class="name">
+                                            <a href="#"> Маскирующий и лечебный консилер  </a>
+                                        </div>
+                                        <div class="price">  434 грн  </div>
+                                        <div class="after-butt">
+                                            <a href="#" class="butt3">
+                                                <span>Замовити</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="contein">
+                                    <a href="#" class="con">
+                                        <img src="images/single-towar.png" alt="">
+                                    </a>
+                                    <div class="text-part">
+                                        <div class="type">
+                                            <a href="#">Лечебная косметика</a>
+                                        </div>
+                                        <div class="name">
+                                            <a href="#"> Маскирующий и лечебный консилер  </a>
+                                        </div>
+                                        <div class="price">  434 грн  </div>
+                                        <div class="after-butt">
+                                            <a href="#" class="butt3">
+                                                <span>Замовити</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="contein">
+                                    <a href="#" class="con">
+                                        <img src="images/single-towar.png" alt="">
+                                    </a>
+                                    <div class="text-part">
+                                        <div class="type">
+                                            <a href="#">Лечебная косметика</a>
+                                        </div>
+                                        <div class="name">
+                                            <a href="#"> Маскирующий и лечебный консилер  </a>
+                                        </div>
+                                        <div class="price">  434 грн  </div>
+                                        <div class="after-butt">
+                                            <a href="#" class="butt3">
+                                                <span>Замовити</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="item">
+                                <div class="contein">
+                                    <a href="#" class="con">
+                                        <img src="images/single-towar.png" alt="">
+                                    </a>
+                                    <div class="text-part">
+                                        <div class="type">
+                                            <a href="#">Лечебная косметика</a>
+                                        </div>
+                                        <div class="name">
+                                            <a href="#"> Маскирующий и лечебный консилер  </a>
+                                        </div>
+                                        <div class="price">  434 грн  </div>
+                                        <div class="after-butt">
+                                            <a href="#" class="butt3">
+                                                <span>Замовити</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <a href="#" class="butt4">
+                            <span> Дивитись продукцію </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section fp-auto-height" id="section6" style="background-color: #fff;">
+            <div class="main-about-wrap">
+                <div class="conteiner">
+                    <div class="siders">
+                        <div class="imagepart">
+                            <div class="con">
+                                <img src="images/slider2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="infopart">
+                            <div class="text-part">
+                                <div class="texter">
+                                    <h2> Наша студія працює для небайдужих до краси людей </h2>
+                                    <blockquote> Будь завжди собою! </blockquote>
+                                    <p>Салон «DIAS» - це ціла «країна» краси у Львові, покликання якої - дбати про ваше здоров'я, красу і самопочуття. Косметичні процедури, макіяж, манікюр, педікюр, масаж, перукарські послуги - все це і багато іншого пропонує наша студія краси.</p>
+                                </div>
+                                <div class="video-block">
+                                    <a data-fancybox="" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="con">
+                                        <img src="images/video-prew.jpg" alt="">
+                                        <span class="bbv"></span>
+                                    </a>
+                                    <div class="text-part">
+                                        <p>Салон «DIAS» - це ціла «країна» краси у Львові, покликання якої - дбати про ваше здоров'я, красу і самопочуття</p>
+                                    </div>
+                                </div>
+                                <div class="readmore">
+                                    <a href="#" class="more">
+                                        <span>Більше послуг</span>
+                                        <svg width="31" height="8" viewBox="0 0 31 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <path d="M 30.3536 0.353553C 30.5488 0.158291 30.5488 -0.158291 30.3536 -0.353553L 27.1716 -3.53553C 26.9763 -3.7308 26.6597 -3.7308 26.4645 -3.53553C 26.2692 -3.34027 26.2692 -3.02369 26.4645 -2.82843L 29.2929 0L 26.4645 2.82843C 26.2692 3.02369 26.2692 3.34027 26.4645 3.53553C 26.6597 3.7308 26.9763 3.7308 27.1716 3.53553L 30.3536 0.353553ZM 0 0.5L 30 0.5L 30 -0.5L 0 -0.5L 0 0.5Z" transform="translate(0 4)" fill="#E71938"></path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section fp-auto-height" id="section7" style="background-color: #fff;">
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpitGF1cl79hYoTxxOi6WfBVvIrsMr6Jo"></script>
+                <script>
+                    var place = {lat: 49.979812 , lng: 36.261314};
+                    var pointer = 'images/pointer.png';
+                </script>
+                
+                <div class="contact-block-wrap">
+                    <div class="top-row">
+                        <div class="conteiner">
+                            <div class="siders">
+                                <div class="infopart">
+                                    <div class="text-part">
+                                        <div class="transformed">
+                                            <span>Контакти</span>
+                                        </div>
+                                        <div class="texter">
+                                            <h2>Завітайте до нас</h2>
+                                            <p>Ми будемо раді проконсольтувати вас по вашому питанню. Пригостимо запашною кавою і печеньками.</p>
+                                            <div class="place">м.Львів вул. Городоцька, 42</div>
+                                            <ul class="list-tell">
+                                                <li>
+                                                    <a href="tel:+380322332444"> (032) 233-24-44 </a>
+                                                </li>
+                                                <li>
+                                                    <a href="tel:+380963484535"> (096) 348-45-35 </a>
+                                                </li>
+                                                <li>
+                                                    <a href="tel:+380633225123">(063) 322-51-23</a>
+                                                </li>
+                                            </ul>
+                                            <div class="after-mail">
+                                                <a href="mailto:dias-studio@gmail.com"> dias-studio@gmail.com </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="imagepart">
+                                    <div class="con">
+                                        <div id="map"></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+        </div>
+        
+        <div class="section fp-auto-height" id="section8" style="background-color: #fff;">
+            <div class="contact-block-wrap">
+                <div class="bottom-row">
+                        <div class="row-follow">
+                            <div class="cubi cub1 empty"></div>
+                            <a href="#" target="_blank" class="cubi cub1 instagram">
+                                <div class="con">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                            </a>
+                            <div class="cubi cub1 empty"></div>
+                            <a href="#" target="_blank"  class="cubi cub1 facebook">
+                                <div class="con">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <div class="text"> Студія </div>
+                                </div>
+                            </a>
+                            <div class="cubi cub2  empty">
+                                <div class="texter">
+                                    <h3>Приєднуйтесь до наших соц мереж </h3>
+                                    <p>Ми активно викладуємо нові пости у наші соц. мережі. приєднюйся щоб бути в курсі усіх новин!</p>
+                                </div>
+                            </div>
+                            <a href="#" target="_blank"  class="cubi cub1 vk">
+                                <div class="con">
+                                    <i class="fab fa-vk"></i>
+                                </div>
+                            </a>
+                            <div class="cubi cub1 empty"></div>
+                            <div class="cubi cub1"></div>
+                            <div class="cubi cub1 empty"></div>
+                            <a href="#" target="_blank" class="cubi cub1 facebook">
+                                <div class="con">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <div class="text"> Школа </div>
+                                </div>
+                            </a>
+                            <div class="cubi cub2 empty framelist-cubi">
+                                <div class="list-frame">
+
+
+                                    <div class="fb-page" 
+                                        data-href="https://www.facebook.com/rotatapizzaif/"
+                                        data-hide-cover="false"
+                                        data-show-facepile="false"></div>
+                                </div>
+                            </div>
+                            <div class="cubi cub1"></div>
+                            <div class="cubi cub1 empty"></div>
+                            <div class="cubi cub1"></div>
+                
+                        </div>
+                </div>
+
+                <div id="fb-root"></div>
+                <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v3.0&appId=189052281887449&autoLogAppEvents=1';
+                fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+            
+                <div class="footer-part">
+                    <div class="nav-menu">
+                        <ul>
+                            <li>
+                                <a href="#"> Головна </a>
+                            </li>
+                            <li>
+                                <a href="#"> Школа </a>
+                            </li>
+                            <li>
+                                <a href="#"> Косметологія </a>
+                            </li>
+                            <li>
+                                <a href="#"> Послуги </a>
+                            </li>
+                            <li>
+                                <a href="#"> Вакасії </a>
+                            </li>
+                            <li>
+                                <a href="#"> Новини </a>
+                            </li>
+                            <li>
+                                <a href="#"> Контакти </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="socials">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-vk"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-skype"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="copir">
+                        <p>© 2010-2019 DIAS STUDIO </p>
+                    </div>
+                    <div class="after-text">
+                        <p>Розробка сайтів та просування в Інтернет - Незалежний ІТ спеціаліст <a href="http://malko.in.ua/" target="_blank"> malko </a> </p>
+                    </div>
+                </div>                    
+            </div>
+        </div>
+
+    </div>
+    <!-- /MAIN -->
+
+    <div class="hidden-block">
+    
+        <div id="call_success">
+            <div class="call-success">
+                 <div class="call_success">
+                     <div class="call-title">Спасибо за заявку!</div>
+                     <div class="call-subtitle">Мы свяжемся с Вами в ближайшее время</div>
+                 </div>
+            </div>
+        </div>
+    
+        <div id="call-popup">
+            <form action="ajax.php" class="contact-form">
+                <div class="contact-form-title">
+                    <h5>Lorem ipsum dolor.</h5>
+                </div>
+                <div class="contact-form-row cfix">
+                    <div class="contact-form-item">
+                        <div class="contact-form-item-input form_row">
+                            <div class="form_input">
+                                <input type="text" name="contact_name" required="required" value="" placeholder="Ваше Имя">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-item">
+                        <div class="contact-form-item-input form_row">
+                            <div class="form_input">
+                                <input type="text" name="contact_tel" value="" required="required" placeholder="Ваш номер" class="tel-mask">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-row cfix">
+                    <div class="contact-form-item">
+                        <button type="submit" class="contact-submit">
+                            <span>Отправить заявку</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+    
+    </footer>
+    <!-- FOOTER -->
+    
+    <!-- SCRIPTS -->
+    <script src="js/plagins/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/validate_script.js" ></script>
+    
+    <!-- build:js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+    
+    <script type="text/javascript" src="js/plagins/select2.js" ></script>
+    <script type="text/javascript" src="js/plagins/jquery.validate.min.js" ></script>
+    <script type="text/javascript" src="js/plagins/maskInput.js" ></script>
+    <script type="text/javascript" src="js/plagins/slick.js" ></script>
+    
+    <script type="text/javascript" src="js/plagins/jQuery.scrollSpeed.js" ></script>
+    
+    <script type="text/javascript" src="js/plagins/nouislider.js" ></script>
+    
+    
+    <script type="text/javascript" src="js/plagins/scrolloverflow.min.js" ></script>
+    <script type="text/javascript" src="js/plagins/jquery.easings.min.js" ></script>
+    <script type="text/javascript" src="js/plagins/jquery.fullpage.min.js" ></script>
+    <script type="text/javascript" src="js/plagins/flickity.pkgd.min.js" ></script>
+    
+    
+    
+    
+    <script type="text/javascript" src="js/basic_scripts.js" ></script>
+    <script type="text/javascript" src="js/develop/main.js" ></script>
+    <script type="text/javascript" src="js/develop/custom.js" ></script>
+    <!-- endbuild -->
+    
+    <!-- /SCRIPTS -->
+
+</div>
+</body>
+</html>
