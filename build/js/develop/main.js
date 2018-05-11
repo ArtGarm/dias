@@ -380,6 +380,33 @@ $(document).ready(function(){
 
     /* form-filters */
 
+    /* cubi */
+
+        if( $('.row-follow').length ){
+
+            $('.row-follow .facebook , .row-follow .instagram ').on('click', function(e){
+                e.preventDefault();
+
+                var curr = $(this).attr('href');
+                $('.row-follow .list-frame .frame').each(function(){
+                    if( $(this).attr('data-frame') == curr ){
+                        if ( !$(this).hasClass('active') ){
+                            $('.row-follow .list-frame .frame.active').hide(300, function(){
+                                $(this).removeClass('active');
+                            });
+                            $(this).show(300, function(){
+                                $(this).addClass('active');
+                            });
+                        }
+                    }
+                });
+
+            })
+
+        }
+
+    /* cubi */
+
 
     $("select").select2();
 
