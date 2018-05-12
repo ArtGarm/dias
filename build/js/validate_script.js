@@ -138,9 +138,55 @@ function Maskedinput(){
     }
 }
 
+/* stars */
+
+function sendCommentStars( id , counter ){
+
+    var page = location.pathname;
+
+    $.ajax({
+        url : '/wp-admin/admin-ajax.php',
+        data: {
+            action : 'star',
+            commentId : id,
+            commentCount : counter,
+            page : page
+        },
+        method:'POST',
+        success : function(data){
+
+            if ( data.trim() == 'true') {
+
+                $('.counter-rew .rew-item').each( function(){
+                    
+                    if ( $(this).attr('data-comment-id') == id ){
+                        $(this).find('.stars').addClass('blocked');
+                    }
+
+                });
+
+            }
+
+        }
+    });
+
+}
+
+
 $(document).ready(function(){
 
+    $('.rew-item .stars li').on('click', function(e){
+        e.preventDefault();
+        
+        var current = $(this).index();
+        var rewID = $(this).closest('.rew-item').attr('data-comment-id');
+
+        sendCommentStars( rewID , current );
+
+    });
+
     
+    validate('.form-rew', {submitFunction:validationCall}); 
     
     validate('.contact-form-wrap form', {submitFunction:validationCall}); 
     validate('#call-popup .contact-form', {submitFunction:validationCall});
