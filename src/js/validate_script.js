@@ -184,7 +184,6 @@ $(document).ready(function(){
         sendCommentStars( rewID , current );
 
     });
-
     
     validate('.form-rew', {submitFunction:validationCall}); 
     
