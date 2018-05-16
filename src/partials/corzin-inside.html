@@ -1,102 +1,104 @@
 <div class="corzin-inside-wrap">
     <div class="content-siders">
         <div class="infopart">
-            <div class="title-part">
-                <h1> Оформити замовлення </h1>
-            </div>
-            <div class="form-part">
-                <div class="top-part">
-                    <div class="col">
-                        <div class="rower">
-                            <div class="labled">Ваше імя</div>
-                            <div class="inputer">
-                                <input type="text" name="name" required="required" placeholder="Роберта - the best">
+            <form action="#" class="convert-parter">
+                <div class="title-part">
+                    <h1> Оформити замовлення </h1>
+                </div>
+                <div class="form-part">                
+                    <div class="top-part">
+                        <div class="col">
+                            <div class="rower">
+                                <div class="labled">Ваше імя</div>
+                                <div class="inputer">
+                                    <input type="text" name="name" required="required" placeholder="Роберта - the best">
+                                </div>
+                            </div>
+                            <div class="rower">
+                                <div class="labled">Фамілія *</div>
+                                <div class="inputer">
+                                    <input type="text" name="secondname" required="required" placeholder="Роберта - the best">
+                                </div>
                             </div>
                         </div>
-                        <div class="rower">
-                            <div class="labled">Фамілія *</div>
-                            <div class="inputer">
-                                <input type="text" name="secondname" required="required" placeholder="Роберта - the best">
+                        <div class="col">
+                            <div class="rower">
+                                <div class="labled"> Телефон * </div>
+                                <div class="inputer">
+                                    <input type="tel" name="tel" required="required" placeholder="+38 (___) ___ - __ - __">
+                                </div>
+                            </div>
+                            <div class="rower">
+                                <div class="labled"> E-mail * </div>
+                                <div class="inputer">
+                                    <input type="email" name="email" required="required">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="rower">
-                            <div class="labled"> Телефон * </div>
-                            <div class="inputer">
-                                <input type="tel" name="tel" required="required" placeholder="+38 (___) ___ - __ - __">
+                    <div class="bot-part">
+                        <div class="col">
+                            <div class="rower">
+                                <div class="labled"> Варіант доставки </div>
+                                <div class="inputer">
+                                    <select name="deliver">
+                                        <option value="1"> Самовивіз з Нової Почти 1 </option>
+                                        <option value="2"> Самовивіз з Нової Почти 2 </option>
+                                        <option value="3"> Самовивіз з Нової Почти 3 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="rower">
+                                <div class="labled">Населений пункт</div>
+                                <div class="inputer">
+                                    <input type="text" name="place" required="required" placeholder="Крижопіль">
+                                </div>
+                            </div>
+                            <div class="rower">
+                                <div class="labled"> Відділення </div>
+                                <div class="inputer">
+                                    <select name="deliver_otdel">
+                                        <option value="1"> 1 </option>
+                                        <option value="2"> 2 </option>
+                                        <option value="3"> 3 </option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                        <div class="rower">
-                            <div class="labled"> E-mail * </div>
-                            <div class="inputer">
-                                <input type="email" name="email" required="required">
+                        <div class="col">
+                            <div class="rower">
+                                <div class="labled"> Варіант оплати </div>
+                                <div class="inputer">
+                                    <select name="oplata">
+                                        <option value="1"> Готівки 1 </option>
+                                        <option value="2"> Готівки 2 </option>
+                                        <option value="3"> Готівки 3 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="rower">
+                                <div class="labled">Комментар</div>
+                                <div class="inputer">
+                                    <textarea name="comment"></textarea>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="bot-part">
-                    <div class="col">
-                        <div class="rower">
-                            <div class="labled"> Варіант доставки </div>
-                            <div class="inputer">
-                                <select name="deliver">
-                                    <option value="1"> Самовивіз з Нової Почти 1 </option>
-                                    <option value="2"> Самовивіз з Нової Почти 2 </option>
-                                    <option value="3"> Самовивіз з Нової Почти 3 </option>
-                                </select>
-                            </div>
+                <div class="submiter-part">
+                    <div class="to-end">
+                        <div class="summ">
+                            <div class="topper">Сума замовлення</div>
+                            <div class="full-sum"> <span> 1347 </span> грн </div>
                         </div>
-                        <div class="rower">
-                            <div class="labled">Населений пункт</div>
-                            <div class="inputer">
-                                <input type="text" name="place" required="required" placeholder="Крижопіль">
-                            </div>
-                        </div>
-                        <div class="rower">
-                            <div class="labled"> Відділення </div>
-                            <div class="inputer">
-                                <select name="deliver_otdel">
-                                    <option value="1"> 1 </option>
-                                    <option value="2"> 2 </option>
-                                    <option value="3"> 3 </option>
-                                </select>
-                            </div>
+                        <div class="submit"> 
+                            <button type="submit" class="butt">
+                                <span>Оформити замовлення</span>
+                            </button>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="rower">
-                            <div class="labled"> Варіант оплати </div>
-                            <div class="inputer">
-                                <select name="oplata">
-                                    <option value="1"> Готівки 1 </option>
-                                    <option value="2"> Готівки 2 </option>
-                                    <option value="3"> Готівки 3 </option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="rower">
-                            <div class="labled">Комментар</div>
-                            <div class="inputer">
-                                <textarea name="comment"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="submiter-part">
-                <div class="to-end">
-                    <div class="summ">
-                        <div class="topper">Сума замовлення</div>
-                        <div class="full-sum"> <span> 1347 </span> грн </div>
-                    </div>
-                    <div class="submit"> 
-                        <button type="submit" class="butt">
-                            <span>Оформити замовлення</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
+                </div>     
+            </form>
         </div>
         <div class="added-towar-cart">
             <div class="conteiner">

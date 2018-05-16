@@ -25,6 +25,10 @@ function realodCorzine(){
 
     $('.last-sum .summ-count span').html( steak );
 
+    if ( $('body').hasClass('page-cart') ){
+        $('.convert-parter .full-sum span').html( steak );
+    }
+
 }
 
 $(document).ready(function(){

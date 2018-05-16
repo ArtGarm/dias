@@ -97,8 +97,8 @@ function validate(form, options){
 /*Отправка формы с вызовом попапа*/
 function validationCall(form){
 
-  var thisForm = $(form);
-  var formSur = thisForm.serialize();
+    var thisForm = $(form);
+    var formSur = thisForm.serialize();
 
     $.ajax({
         url : thisForm.attr('action'),
@@ -186,6 +186,8 @@ $(document).ready(function(){
     });
     
     validate('.form-rew', {submitFunction:validationCall}); 
+
+    validate('.corzin-inside-wrap form.convert-parter', {submitFunction:validationCall});     
     
     validate('.contact-form-wrap form', {submitFunction:validationCall}); 
     validate('#call-popup .contact-form', {submitFunction:validationCall});

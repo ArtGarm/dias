@@ -1,4 +1,4 @@
-@media screen and (max-height: 750px){
+@media screen and (max-height: 860px){
 
     header .contein { padding: 15px 30px 0; }
     .conteiner .siders .infopart{ padding: 70px 50px;  width: calc(50% - 100px);  }
@@ -35,6 +35,11 @@
 
     .main-second-wrap .list-proc ul a{ font-size: 22px; }
     .main-second-wrap .list-proc ul li { margin-bottom: 10px; }
+
+    .main-catalog-wrap .item .con{ height: 210px; }
+    .main-catalog-wrap .catalog-part{ padding: 20px 50px; }
+
+    
 
 }
 
