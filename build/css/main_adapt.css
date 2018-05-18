@@ -46,14 +46,9 @@
     top: 20px;
     left: 20px; }
   #hidden-menu nav > ul {
-    width: 50%;
     padding: 50px 25px 50px 50px;
     overflow: auto; }
   #hidden-menu nav .layer2.activate {
-    left: -webkit-calc(100%/2);
-    left: -moz-calc(100%/2);
-    left: calc(100%/2);
-    width: 50%;
     overflow: auto; }
   #hidden-menu nav .layer2 {
     padding: 50px 25px; }
@@ -351,7 +346,27 @@
   #hidden-menu nav .layer2 {
     padding: 50px 25px; }
   #hidden-menu nav > ul a {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .uslugi-list-item .after-button.space-between {
+    padding: 0;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .uslugi-list-item .after-button.space-between a {
+      margin: 5px; }
+  .school-perevagi-wrap {
+    padding: 30px 0; }
+  .school-perevagi-wrap .list-items {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .school-perevagi-wrap .list-items .item {
+    margin: 0 15px 15px; }
+  .school-perevagi-wrap .list-items .texter .name {
+    padding: 0; } }
 
 @media screen and (max-width: 992px) {
   .contact-block-wrap .bottom-row .row-follow {
@@ -651,6 +666,12 @@
     .uslugi-scrolling-tabs .texter-list.trio ul li {
       width: 100%;
       margin-bottom: 5px; }
+  .uslugi-scrolling-tabs .texter-list.double ul {
+    max-width: 500px;
+    margin: 0 auto; }
+    .uslugi-scrolling-tabs .texter-list.double ul li {
+      width: 100%;
+      margin-bottom: 5px; }
   .uslugi-list-item .infopart {
     height: auto; }
   .uslugi-list-item .conteiner .siders {
@@ -673,7 +694,19 @@
     font-size: 16px;
     margin-bottom: 10px; }
   .contact-block-wrap .conteiner .siders {
-    min-height: auto; } }
+    min-height: auto; }
+  .contact-block-wrap.first-inside .text-part {
+    text-align: center;
+    display: block; }
+  .contact-block-wrap .conteiner .siders .infopart {
+    padding-top: 80px; }
+  .uslugi-list-item .conteiner .siders .infopart {
+    padding: 25px 15px; }
+  .uslugi-list-item .after-button .butt3 {
+    min-width: 0; }
+  .uslugi-list-item .after-button .butt {
+    min-width: 0;
+    padding: 12px 15px; } }
 
 @media screen and (max-width: 767px) {
   #hidden-menu nav > ul {
@@ -779,7 +812,36 @@
   .contact-block-wrap .image-bottom {
     display: none; }
   .main-about-wrap .infopart .main-about-pudra {
-    display: none; } }
+    display: none; }
+  .contact-block-wrap .conteiner .siders .infopart {
+    padding-top: 80px; }
+  .contact-form-wrap {
+    padding: 25px 0; }
+  .contact-form-wrap .texrter h2 {
+    font-size: 24px; }
+  .contact-form-wrap .texrter {
+    padding-bottom: 20px; }
+  .contact-form-wrap .former .rower {
+    width: 100%;
+    display: block; }
+  .contact-form-wrap .former .labled {
+    width: 100%; }
+  .contact-form-wrap .former .inputer {
+    width: 100%; }
+    .contact-form-wrap .former .inputer textarea, .contact-form-wrap .former .inputer input {
+      font-size: 16px; }
+    .contact-form-wrap .former .inputer input {
+      height: 40px; }
+    .contact-form-wrap .former .inputer textarea {
+      height: 100px; }
+  .contact-form-wrap .submiter {
+    padding-top: 0; }
+  .uslugi-list-item .single-texter {
+    padding: 0; }
+  .uslugi-list-item .text-part h2 {
+    font-size: 26px; }
+  .uslugi-list-item .text-part ul li {
+    margin-bottom: 5px; } }
 
 @media screen and (max-width: 666px) {
   .butt {

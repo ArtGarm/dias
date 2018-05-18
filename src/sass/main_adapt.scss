@@ -27,8 +27,8 @@
     .conteiner .flickity-prev-next-button.next { left: 50px; }
 
     #hidden-menu .closer{ top: 20px; left: 20px; }
-    #hidden-menu nav > ul{ width: 50%; padding: 50px 25px 50px 50px;  overflow: auto; }
-    #hidden-menu nav .layer2.activate { left: calc(100%/2); width: 50%; overflow: auto; }
+    #hidden-menu nav > ul{ padding: 50px 25px 50px 50px;  overflow: auto; }
+    #hidden-menu nav .layer2.activate {  overflow: auto; }
     #hidden-menu nav .layer2{ padding: 50px 25px;  }
     #hidden-menu nav > ul a{ font-size: 20px; }
 
@@ -179,6 +179,15 @@
     #hidden-menu nav .layer2{ padding: 50px 25px;  }
     #hidden-menu nav > ul a{ font-size: 20px; }
     
+
+    .uslugi-list-item .after-button.space-between{ padding: 0; flex-wrap: wrap; justify-content: space-around;
+        a{ margin: 5px; }
+    }
+
+    .school-perevagi-wrap{ padding: 30px 0; }
+    .school-perevagi-wrap .list-items{ justify-content: space-around; }
+    .school-perevagi-wrap .list-items .item{ margin: 0 15px 15px; }
+    .school-perevagi-wrap .list-items .texter .name{ padding: 0; }
 
 }
 @media screen and (max-width: 1024px){
@@ -334,6 +343,10 @@
     .uslugi-scrolling-tabs .texter-list.trio ul {max-width: 500px; margin: 0 auto;
         li{ width: 100%; margin-bottom: 5px;}
     }
+
+    .uslugi-scrolling-tabs .texter-list.double ul {max-width: 500px; margin: 0 auto;
+        li{ width: 100%; margin-bottom: 5px;}
+    }
     .uslugi-list-item .infopart{ height: auto;}
     .uslugi-list-item .conteiner .siders{ min-height: 0; }
     .conteiner .siders .imagepart .has-video .circle-butt{ display: none; }
@@ -349,6 +362,19 @@
 
 
     .contact-block-wrap .conteiner .siders{ min-height: auto; }
+
+
+    .contact-block-wrap.first-inside .text-part{ text-align: center; display: block; }
+
+    .contact-block-wrap .conteiner .siders .infopart{ padding-top: 80px; }
+
+
+    .uslugi-list-item .conteiner .siders .infopart{ padding: 25px 15px; }
+    .uslugi-list-item .after-button {
+        .butt3{ min-width: 0; }
+        .butt{ min-width: 0;     padding: 12px 15px; }
+    }
+
  
 }
 @media screen and (max-width: 767px){
@@ -410,6 +436,25 @@
 
     .contact-block-wrap .image-bottom{ display: none; }
     .main-about-wrap .infopart .main-about-pudra{ display: none; }
+
+    .contact-block-wrap .conteiner .siders .infopart{ padding-top: 80px; }
+
+    .contact-form-wrap{ padding: 25px 0; }
+    .contact-form-wrap .texrter h2{ font-size: 24px; }
+    .contact-form-wrap .texrter{ padding-bottom: 20px; }
+    .contact-form-wrap .former .rower{ width: 100%; display: block; }
+    .contact-form-wrap .former .labled{ width: 100%; }
+    .contact-form-wrap .former .inputer{ width: 100%;
+        textarea, input{ font-size: 16px; }
+        input{ height: 40px; }
+        textarea{ height: 100px; }
+    }
+    .contact-form-wrap .submiter{ padding-top: 0; }
+
+    .uslugi-list-item .single-texter{ padding: 0; }
+    .uslugi-list-item .text-part h2 { font-size: 26px; }
+    .uslugi-list-item .text-part ul li{ margin-bottom: 5px; }
+
 }
 @media screen and (max-width: 666px){
 

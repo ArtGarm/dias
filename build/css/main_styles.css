@@ -1290,9 +1290,7 @@ header {
       padding: 0;
       margin: 0;
       padding: 80px 30px 80px 80px;
-      width: -webkit-calc(100%/3);
-      width: -moz-calc(100%/3);
-      width: calc(100%/3); }
+      width: 480px; }
       #hidden-menu nav > ul li {
         display: -webkit-box;
         display: -webkit-flex;
@@ -1386,9 +1384,7 @@ header {
       position: absolute;
       left: 0;
       top: 0;
-      width: -webkit-calc(100%/3);
-      width: -moz-calc(100%/3);
-      width: calc(100%/3);
+      width: 480px;
       -webkit-transform: translateY(-100%);
       -moz-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
@@ -1411,9 +1407,7 @@ header {
       transition: all 0.5s;
       opacity: 0; }
       #hidden-menu nav .layer2.activate {
-        left: -webkit-calc(100%/3);
-        left: -moz-calc(100%/3);
-        left: calc(100%/3);
+        left: 480px;
         opacity: 1; }
       #hidden-menu nav .layer2 ul {
         list-style: none;
@@ -2506,6 +2500,15 @@ header {
       padding-top: 15px; }
       .main-catalog-wrap .item .after-butt a {
         margin: 0 auto; }
+    .main-catalog-wrap .item .butt3 {
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
+    .main-catalog-wrap .item .butt3:hover {
+      color: #fff; }
+      .main-catalog-wrap .item .butt3:hover:after {
+        opacity: 0; }
   .main-catalog-wrap .slick-arrow {
     width: 50px;
     height: 50px;
@@ -4364,7 +4367,11 @@ header {
       font-family: 'Vremena';
       line-height: 1.2;
       font-size: 80px;
-      color: #E71938; }
+      color: #E71938;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
     .school-fackt-wrap .list-counters .after {
       font-family: 'Roboto';
       font-weight: 300;
