@@ -2,6 +2,27 @@
 .catalog-wrap {
   padding-top: 30px;
   padding-bottom: 60px; }
+  .catalog-wrap .hidden-button-filter {
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    background-color: #E71938;
+    padding: 16px 20px;
+    -webkit-border-radius: 0px 30px 30px 0px;
+    -moz-border-radius: 0px 30px 30px 0px;
+    border-radius: 0px 30px 30px 0px;
+    overflow: hidden;
+    z-index: 98;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+    .catalog-wrap .hidden-button-filter .con {
+      width: 32px;
+      height: 32px; }
+      .catalog-wrap .hidden-button-filter .con svg {
+        fill: #fff; }
   .catalog-wrap .partials-page {
     display: -webkit-box;
     display: -webkit-flex;
@@ -13,20 +34,21 @@
     -moz-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     padding: 0 30px; }
   .catalog-wrap .form-filters {
     max-width: 290px;
     width: 100%; }
   .catalog-wrap .content-part-page {
-    max-width: -webkit-calc(100% -  290px - 40px);
-    max-width: -moz-calc(100% -  290px - 40px);
-    max-width: calc(100% -  290px - 40px);
-    width: 100%; }
+    width: -webkit-calc(100% -  290px - 40px);
+    width: -moz-calc(100% -  290px - 40px);
+    width: calc(100% -  290px - 40px);
+    max-width: 1320px;
+    margin-left: 40px; }
   .catalog-wrap .menus-part ul {
     list-style: none;
     padding: 0;
@@ -1143,6 +1165,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .single-page-wrap .photos-part {
   width: 50%;
   padding-top: 120px;
+  padding-bottom: 20px;
   background-color: #F2F2F2;
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
@@ -1731,7 +1754,8 @@ body {
   .cart-visible.active {
     right: -webkit-calc(100vw/3);
     right: -moz-calc(100vw/3);
-    right: calc(100vw/3); }
+    right: calc(100vw/3);
+    z-index: 100; }
 
 .cart-hidden {
   position: fixed;

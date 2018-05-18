@@ -393,15 +393,15 @@ $(document).ready(function(){
                 e.preventDefault();
 
                 var curr = $(this).attr('href');
+                $('.row-follow').addClass('traslater');
                 $('.row-follow .list-frame .frame').each(function(){
                     if( $(this).attr('data-frame') == curr ){
                         if ( !$(this).hasClass('active') ){
-                            $('.row-follow .list-frame .frame.active').hide(300, function(){
-                                $(this).removeClass('active');
-                            });
-                            $(this).show(300, function(){
-                                $(this).addClass('active');
-                            });
+                            $('.row-follow .list-frame .frame.active').removeClass('active');
+                            $(this).addClass('active');
+                        } else {
+                            $('.row-follow .list-frame .frame.active').removeClass('active');
+                            $('.row-follow').removeClass('traslater');
                         }
                     }
                 });
@@ -483,6 +483,28 @@ $(document).ready(function(){
 
     /* search */
 
+    /* hidden-button-filter */
+
+        if( $('.catalog-wrap').length ){
+
+            $('.hidden-button-filter').on('click', function(){
+
+                if ( !$(this).hasClass('active') ){
+                    $(this).addClass('active');
+                    $('.form-filters').addClass('active');
+                    $('body').addClass('transparenter');
+                } else {
+                    $(this).removeClass('active');
+                    $('.form-filters').removeClass('active');
+                    $('body').removeClass('transparenter');
+                }
+
+            });
+
+        }
+
+    /* hidden-button-filter */
+
     $("select").select2();
 
 });
@@ -500,13 +522,13 @@ $( window ).scroll(function() {
             $('.has-sticky').each(function(){
 
                 if ( $( window ).scrollTop() + $(window).height() >= $(this).offset().top ){
-                    var dis = $( window ).scrollTop() -  $(this).offset().top + $(window).height() - ($(this).find('.imagepart .uppered-contein').height() + 50) ;
+                    var dis = $( window ).scrollTop() -  $(this).offset().top + $(window).height() - ($(this).find('.imagepart .uppered-contein').height() + $('.uppered-contein').css('padding-top').replace("px", "")*2 ) ;
 
                     $(this).find('.imagepart .uppered-contein').css('top', dis );
 
                     if ( $( window ).scrollTop() + $(window).height()  >= $(this).offset().top +  $(this).height()  ){
 
-                        var discleimad = $(this).height()  - ($(this).find('.imagepart .uppered-contein').height() + 50) ;
+                        var discleimad = $(this).height()  - ($(this).find('.imagepart .uppered-contein').height() + $('.uppered-contein').css('padding-top').replace("px", "")*2 ) ;
 
                         $(this).find('.imagepart .uppered-contein').css('top', discleimad );
                     }

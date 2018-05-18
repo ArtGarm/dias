@@ -1,8 +1,8 @@
 @media screen and (max-height: 860px){
 
     header .contein { padding: 15px 30px 0; }
-    .conteiner .siders .infopart{ padding: 70px 50px;  width: calc(50% - 100px);  }
-    .first-wrap .siders .imagepart{ width: calc(50% + 100px); }
+    .conteiner .siders .infopart{ padding: 70px 50px;  width: calc(50% - 50px);  }
+    .first-wrap .siders .imagepart{ width: calc(50% + 50px); }
 
     .conteiner .siders .infopart .slider-generator{ height: auto; 
         .convert-item.active{ position: relative; }
@@ -39,7 +39,15 @@
     .main-catalog-wrap .item .con{ height: 210px; }
     .main-catalog-wrap .catalog-part{ padding: 20px 50px; }
 
-    
+    .main-second-wrap .infopart .backimage{ max-width: 180px; top: auto; bottom: 0; }
+
+    .main-third-wrap .texter h2{ font-size: 32px; }
+    .main-third-wrap .texter p{ font-size: 14px; }
+    .main-third-wrap .texter h3{ font-size: 18px; }
+    .main-third-wrap .texter ul li{ margin-bottom: 5px; font-weight: 300; }
+    .main-third-wrap .infopart .imager{ top: 0; opacity: 0.5; max-width: 120px; }
+    .main-about-wrap .infopart .main-about-pudra{ top: 0; max-width: 160px; }
+    .contact-block-wrap .image-bottom{ max-width: 360px; }
 
 }
 
@@ -51,29 +59,92 @@
 }
 @media screen and (max-width: 1366px){
 
-    .contact-block-wrap .bottom-row .row-follow{ padding: 50px 15px; max-width: 1010px; justify-content: flex-start; }
+    .contact-block-wrap .bottom-row .row-follow{ padding: 50px 15px; max-width: 930px; justify-content: flex-start; }
 
-    .contact-block-wrap .bottom-row .cubi.cub1{ width: 140px; height: 160px; }
+    .contact-block-wrap .bottom-row .cubi.cub1{ width: 180px; height: 180px; }
     .contact-block-wrap .bottom-row .cubi.cub2{ width: 280px; height: 160px;  }
-    .contact-block-wrap .bottom-row .cubi.cub2.framelist-cubi{ width: 460px; }
+
+    .contact-block-wrap .bottom-row .cubi:nth-child(5) { width: 100%; order: 1; text-align: center; height: auto; padding: 15px; }
+    .contact-block-wrap .bottom-row .row-follow.traslater .cubi:nth-child(5){ transform: none; }
+
+    .contact-block-wrap .bottom-row .list-frame{ top: calc(-100% + 10px); }
+
+    .contact-block-wrap .bottom-row .cubi.cub2.framelist-cubi{ order: 99; width: 100%; height: 180px; }
+
+    .contact-block-wrap .bottom-row .list-frame{ right: 0; overflow: hidden; }
+
+    .contact-block-wrap .bottom-row .row-follow.traslater {
+        .cubi:nth-child(4){transform: none;}
+        .cubi:nth-child(10){ transform: translateY(-100%); }
+        .cubi:nth-child(6){ transform: translateY(-100%); }
+        .cubi:nth-child(8){ transform: translateY(-100%); }
+    }
+
+    .contact-block-wrap .bottom-row .cubi:nth-child(1){ order: 2; }
+    .contact-block-wrap .bottom-row .cubi:nth-child(2){ order: 3; }
+    .contact-block-wrap .bottom-row .cubi:nth-child(3){ order: 4; }
+    .contact-block-wrap .bottom-row .cubi:nth-child(4){ order: 5; }
+    .contact-block-wrap .bottom-row .cubi:nth-child(6){ order: 13; }
+    .contact-block-wrap .bottom-row .cubi:nth-child(7){ order: 10; }
+
+    .contact-block-wrap .bottom-row .cubi:nth-child(8){ order: 9; }
+    .contact-block-wrap .bottom-row .cubi:nth-child(9){ order: 8; }
+    .contact-block-wrap .bottom-row .cubi:nth-child(10){ order: 10; }
+    .contact-block-wrap .bottom-row .cubi:nth-child(11){ order: 11; }
+    .contact-block-wrap .bottom-row .cubi:nth-child(13){ order: 12; }
+
+
+
     .contact-block-wrap .bottom-row .texter{ padding: 15px; }
     .contact-block-wrap .bottom-row .texter h3{ font-size: 22px; }
     .contact-block-wrap .bottom-row .texter p{ font-size: 12px; }
 
     .contact-block-wrap .bottom-row .cubi{
-        &:nth-child(7){ display: none; }
+       // &:nth-child(7){ display: none; }
         &:nth-child(12){ display: none; }
-        &:nth-child(13){ display: none; }
+       //  &:nth-child(13){ display: none; }
         &:nth-child(14){ display: none; }
     }
 
+    .main-second-wrap .infopart .backimage{ max-width: 180px; top: auto; bottom: 0; }
+
+    .main-third-wrap .texter h2{ font-size: 32px; }
+    .main-third-wrap .texter p{ font-size: 14px; }
+    .main-third-wrap .texter h3{ font-size: 18px; }
+    .main-third-wrap .texter ul li{ margin-bottom: 5px; font-weight: 300; }
+    .main-third-wrap .infopart .imager{ top: 0; opacity: 0.5; max-width: 120px; }
+    .main-about-wrap .infopart .main-about-pudra{ top: 0; max-width: 160px; }
+    .contact-block-wrap .image-bottom{ max-width: 360px; }
+
+    .conteiner .siders .infopart{ padding: 70px 50px;  width: calc(50% - 50px);  }
+    .conteiner  .siders .imagepart{ width: calc(50% + 50px); }
+
+
+    /* послуги */
+    .uslugi-scrolling-tabs{ padding: 60px 0; }
+    .uslugi-scrolling-tabs .texter h2{ font-size: 28px; padding-bottom: 10px; }
+    .uslugi-scrolling-tabs .tubber-scroller { padding-top: 25px; }
+
+    .uslugi-list-item .text-part h2{ font-size: 32px; }
+    .uslugi-list-item .text-part { padding: 0 0 10px 30px; }
+    .uslugi-list-item .pricer-item { padding: 0 0 15px 30px;}
+
+    .uslugi-list-item .pricer-item .name{ font-weight: 300; }
+    .uslugi-list-item .pricer-item ul li{ padding: 8px 2px; }
+
+    .conteiner .siders .uppered-contein{ max-width: 420px; }
+    .conteiner .siders .uppered-contein{ padding:25px 20px; 
+        .butt{ max-width: 160px; }
+    }
+    .conteiner .siders .uppered-contein .text{ font-size: 16px; width: calc(100% - 170px); }
+
+    /* послуги */
 }
 @media screen and (max-width: 1200px){
 
     /* globals */
         header .contein { padding: 15px 30px 0; }
-        .conteiner .siders .infopart{ padding: 70px 50px;  width: calc(50% - 100px);  }
-        .first-wrap .siders .imagepart{ width: calc(50% + 100px); }
+        
 
         .conteiner .siders .infopart .slider-generator{ height: auto; 
             .convert-item.active{ position: relative; }
@@ -107,8 +178,7 @@
     #hidden-menu nav .layer2.activate { left: calc(100%/2); width: 50%; }
     #hidden-menu nav .layer2{ padding: 50px 25px;  }
     #hidden-menu nav > ul a{ font-size: 20px; }
-
-
+    
 
 }
 @media screen and (max-width: 1024px){
@@ -116,7 +186,7 @@
 }
 @media screen and (max-width: 992px){
 
-    .contact-block-wrap .bottom-row .cubi.empty{ display: none; }
+    .contact-block-wrap .bottom-row .row-follow{ display: none; }
     .contact-block-wrap .bottom-row .cubi.cub2.framelist-cubi{ display: block; width: 100%; height: auto;; }
 
     .contact-block-wrap .bottom-row .cubi.cub1{ width: calc(100vw/5 - 30px/5); height: calc(100vw/5 - 30px/5); }
@@ -126,6 +196,10 @@
     
 
     #scrolldown{ display: none; }
+
+    .contact-block-wrap .image-bottom{ top: 50%; pointer-events: none; }
+
+    
 
     /* first main */
         header .place, header .tell{display: none;}
@@ -154,7 +228,12 @@
         .conteiner .siders .infopart{ text-align: center; position: relative; z-index: 5;
             .convert-list-proc{ margin: 0 auto;  }
         }
-        .conteiner .siders .imagepart .con img{ filter: blur(15px); }
+        .conteiner .siders .imagepart .con img{ opacity: 0.2; }
+        .contact-block-wrap #map img{ opacity: 1 !important;; }
+
+        .main-third-wrap .conteiner .siders .imagepart .con img{ display: none; }
+
+        .main-second-wrap .infopart .backimage{ opacity: 0.3; }
 
     /* for all perfect */
 
@@ -211,10 +290,66 @@
         }
     }
 
-
     .footer-part .nav-menu{ display: none; }
     .footer-part .socials{ padding: 10px 0; }
 
+    
+    .first-inside .infopart{ justify-content: center; }
+    .conteiner .siders .infopart{ padding: 50px 15px 25px; }
+
+    .first-inside .first-block .text-part h1{ font-size: 32px; line-height: 1.2; text-align: center; }
+    .breadcrums{ text-align: center; }
+    .first-inside .first-block .under-texter{ margin-top: 25px; padding-left: 45px; }
+    .first-inside .first-block .under-texter .texter p { color: #3e3e3e; }
+    .first-inside .first-block .under-texter .button-row {  padding-top: 20px; text-align: center; }
+    .uslugi-scrolling-tabs .texter h2 { font-size: 22px; }
+    .uslugi-scrolling-tabs{ padding: 25px 0; }
+
+    .uslugi-scrolling-tabs .tubber-scroller ul{ flex-wrap: wrap;  justify-content: space-around;
+        li{ margin: 5px; }
+    }
+
+
+    .uslugi-list-item .infopart{ position: relative; 
+        &:before{ position: absolute; content: ''; top: 0; left: 0; right: 0; bottom: 0; z-index: 0; background-color: rgba(255,255,255, 0.8);}
+        .conteiner-texter{ position: relative; z-index: 1; }
+    }
+    .uslugi-list-item .conteiner .siders .infopart{padding-bottom: 130px; }
+    .conteiner .siders .uppered-contein{left: 0; right: 0; max-width: 100%; padding: 15px; }
+    .conteiner .siders .uppered-contein .sider-row{ display: block; text-align: center;  }
+    .conteiner .siders .uppered-contein .text{ width: 100%; margin-bottom: 10px; }
+    .uslugi-list-item .text-part h2{ text-align: center; }
+    .uslugi-list-item .text-part{ padding: 0 0 15px; }
+    .uslugi-list-item .text-part p, .uslugi-list-item .single-texter p{ color: #3e3e3e; }
+    .uslugi-list-item .pricer-item .name{ font-weight: 400; max-width: 69%; }
+    .uslugi-list-item .pricer-item .cena{ max-width: 30%; }
+    .uslugi-list-item .pricer-item ul li{ border-color:#3e3e3e;  }
+    .uslugi-list-item .after-button { padding: 0;
+        .butt3{ padding: 12px 25px; }
+    }
+
+    .conteiner .siders .imagepart .has-video{ min-height: auto; }
+
+    .uslugi-scrolling-tabs .texter-list{ padding-top: 15px; }
+    .uslugi-scrolling-tabs .texter-list.trio ul {max-width: 500px; margin: 0 auto;
+        li{ width: 100%; margin-bottom: 5px;}
+    }
+    .uslugi-list-item .infopart{ height: auto;}
+    .uslugi-list-item .conteiner .siders{ min-height: 0; }
+    .conteiner .siders .imagepart .has-video .circle-butt{ display: none; }
+
+    .uslugi-list-item.video-block-standart .hidden-button{ display: block; }
+    .uslugi-list-item.video-block-standart .conteiner .siders .infopart{ padding-bottom: 50px; }
+
+    .uslugi-list-item .single-texter h2{ font-size: 28px; text-align: center; }
+    .uslugi-list-item .single-texter h3{ font-size: 16px; text-align: center; }
+
+    .about-slider-infos{ padding: 30px 0; }
+    .about-slider-infos .topper-texter h3{ font-size: 16px;  margin-bottom: 10px; }
+
+
+    .contact-block-wrap .conteiner .siders{ min-height: auto; }
+ 
 }
 @media screen and (max-width: 767px){
 
@@ -272,6 +407,9 @@
     .footer-part .socials ul li{ margin: 5px 15px; }
     .contact-block-wrap .bottom-row .row-follow{ padding: 25px 15px 5px; }
 
+
+    .contact-block-wrap .image-bottom{ display: none; }
+    .main-about-wrap .infopart .main-about-pudra{ display: none; }
 }
 @media screen and (max-width: 666px){
 
