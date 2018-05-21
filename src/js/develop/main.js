@@ -182,18 +182,26 @@ $(document).ready(function(){
         }
 
         $('.butter-wrapper .butter').on('click', function(){
+            if ( !$(this).closest('.butter-wrapper').hasClass('active') ){
+                $(this).closest('.butter-wrapper').addClass('active')
+                $('#hidden-menu').fadeIn(300, function(){
+                    $(this).addClass('activateMenu');
+                });
 
-            $('#hidden-menu').fadeIn(300, function(){
-                $(this).addClass('activateMenu');
-            });
+            } else {
+                $(this).closest('.butter-wrapper').removeClass('active')
+                $('#hidden-menu').removeClass('activateMenu');
+                $('#hidden-menu').fadeOut(300);
+            }
 
         });
-
+/*
         $('#hidden-menu .closer').on('click', function(){
             $('#hidden-menu').removeClass('activateMenu');
             $('#hidden-menu').fadeOut(300);
             
         });
+*/
 
     /* hidden-menu */
 

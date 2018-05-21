@@ -100,7 +100,7 @@
                     .circle-butt{  opacity: 1; transition: all 0.5s;  width: 200px; height: 200px; border-radius: 50%; padding: 25px; margin: 0 auto; display: block; position: relative; overflow: hidden; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
                         &:before{ content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.7); opacity: 0.2; }
                         .insider{ width: 150px; height: 150px; border-radius: 50%; padding: 25px;display: block; position: relative; overflow: hidden;
-                            &:before{ content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.7); opacity: 1; }
+                           // &:before{ content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.7); opacity: 1; }
                             .triangle{ width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;
                                 &:before{ content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 1); opacity: 1; }
                                 svg{position: relative; z-index: 5;}
@@ -109,12 +109,12 @@
                     }
 
                     .circle-butt{  opacity: 1; transition: all 0.5s;  width: 160px; height: 160px; border-radius: 50%; padding: 20px; margin: 0 auto; display: block;  overflow: hidden; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-                        &:before{ content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.7); opacity: 1; animation-duration: 3s; animation-name: pulseBig; animation-delay: -1s;  animation-iteration-count: infinite; border-radius: 50%; }
-                        &:after{ content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.7); opacity: 1; animation-duration: 3s;  animation-name: pulseMid;   animation-iteration-count: infinite; border-radius: 50%;}
+                        &:before{ content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.7); opacity: 1; animation-duration: 4s; animation-name: pulseBig;   animation-iteration-count: infinite; border-radius: 50%; }
+                        &:after{ content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.7); opacity: 1; animation-duration: 4s;  animation-name: pulseMid; animation-delay: 2s;  animation-iteration-count: infinite; border-radius: 50%;}
         
                         .insider{ width: 120px; height: 120px; border-radius: 50%; padding: 20px; display: block; position: relative; overflow: hidden;
-                            &:after{ content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.7); opacity: 1; animation-duration: 3s;  animation-name: pulseMid1; animation-delay: 1s;  animation-iteration-count: infinite; border-radius: 50%;}
-                            &:before{ content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.7); opacity: 1; animation-duration: 3s; animation-name: pulseBig1; animation-delay: 0.5s;  animation-iteration-count: infinite; border-radius: 50%; }
+                            //&:after{ content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.7); opacity: 1; animation-duration: 3s;  animation-name: pulseMid1; animation-delay: 1s;  animation-iteration-count: infinite; border-radius: 50%;}
+                            //&:before{ content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.7); opacity: 1; animation-duration: 3s; animation-name: pulseBig1; animation-delay: 0.5s;  animation-iteration-count: infinite; border-radius: 50%; }
                             .triangle{ width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;
                                 &:before{ content: ''; transition: all 0.3s;  border-radius: 50%;  position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 1); opacity: 1; }
                                 svg{position: relative; z-index: 5;}
@@ -192,17 +192,50 @@
 /* header */
 
     header{ position: absolute; top: 0; left: 0; right: 0; z-index: 10;
+        .info-part{ display: flex; align-items: center; }
+        .lang-drop{ position: relative; margin: 0 0 0 25px;
+            .curent{ padding-right: 20px; cursor: pointer;
+                &:before{ content: ''; right: 0; position: absolute; width: 8px; height: 8px; border-bottom: 2px solid  #E71938; border-left: 2px solid  #E71938; transform: rotate(-45deg); top: 2px; }
+                .name{ font-family: "Gilroy"; font-weight: 800; line-height: normal; font-size: 14px; color: #000000; }
+            }
+            .dropped{ position: absolute; top: 100%; left: 0; right: 0; transform: translateY(30px); pointer-events: none; opacity: 0; transition: all 0.3s;
+                ul{ list-style: none; padding: 0; margin: 0;
+                    li{padding: 2px 0;}
+                }
+                a{ font-family: "Gilroy"; text-decoration: none;  font-weight: 800; line-height: normal; font-size: 14px; color: #000000; position: relative;
+                    &:before{ content: ''; position: absolute; bottom: -1px; height: 1px; left: 0; right: 100%; background-color: #E71938; transition: all 0.3s; }
+                    &:hover { color: #E71938;
+                        &:before{ right: 0; }
+                    }
+                }
+            }
+            &:hover{
+                .dropped{ transform: translateY(0px); opacity: 1; pointer-events: auto; }
+            }
+        }
+
         .contein{padding: 40px 70px 0; }
         .siders{display: flex; align-items: center; justify-content: space-between; 
             .left{ display: flex; align-items: flex-end; justify-content: space-between;}
             .right{  width: 100%; display: flex; align-items: center; justify-content: flex-end; }
         }
-        .butter-wrapper{margin-right: 40px;
-            .butter{width: 25px; height: 25px; position: relative; cursor: pointer;
-                span{ position: absolute; width: 25px; height: 2px; border-radius: 2px; background-color: #3E3E3E; left: calc(50% - 25px/2); top: calc(50% - 1px); 
+        .butter-wrapper{margin-right: 40px; position: relative; z-index: 2;
+            
+            .butter{width: 25px; height: 25px; position: relative; cursor: pointer; transform: translate(0px, 0px); transition: all 0.3s;
+                span{ position: absolute; width: 25px; height: 2px; border-radius: 2px; background-color: #3E3E3E; left: calc(50% - 25px/2); top: calc(50% - 1px);  transition: all 0.3s;
                     &:nth-child(1){ left: calc(50% - 25px/2); top: calc(50% - 8px); }
                     &:nth-child(2){ left: calc(50% - 25px/2); top: calc(50% - 1px); }
                     &:nth-child(3){ left: calc(50% - 25px/2); top: calc(50% + 6px); }
+                }
+            }
+
+            &.active{ z-index: 1002; 
+                .butter{ transform: translate(-10px, -10px); 
+                    span{  background-color: #fff; 
+                        &:nth-child(1){ transform: rotate(45deg); top: calc(50% - 8px);  }
+                        &:nth-child(2){ opacity: 0; }
+                        &:nth-child(3){ transform: rotate(-45deg); top: calc(50% - 8px);  }
+                    }
                 }
             }
         }
@@ -210,7 +243,7 @@
             a{display: block; text-decoration: none;}
         }
         .place{
-            p{ font-family: 'Gilroy'; font-weight: 800; letter-spacing: 0.08em; line-height: 1.2; font-size: 14px; color: #000000; }
+            p{ font-family: 'Gilroy'; font-weight: 800; letter-spacing: 0.04em; line-height: 1.2; font-size: 14px; color: #000000; }
         }
         .tell{ margin: 0 0 0 25px;
             a{font-family: 'Gilroy'; font-weight: 800; letter-spacing: 0.08em; line-height: 1.2; font-size: 14px; color: #000000; text-decoration: none; }
@@ -218,8 +251,17 @@
         .popup-butt{ width: 100%; max-width: 200px;
             .butt2{display: block;}
         }
-        .contein-search{ margin: 0 30px; cursor: pointer;
-            .con{width: 20px; height: 20px; }
+        .contein-search{ margin: 0 30px; cursor: pointer;              
+            .con{width: 16px; height: 16px; position: relative;
+                svg{ position: relative; z-index: 2; width: 100%; height: auto; fill: #000000; transition: all 0.5s; }
+                &:before{content: ''; position: absolute; top: -10px; left: -10px; bottom: -10px; right: -10px; background: linear-gradient(118.78deg, #E71938 23.68%, #C4037D 78.9%); opacity: 0.5;  border-radius: 50%; opacity: 0; transition: all 0.5s; }
+            }
+            &:hover{
+                .con{
+                    svg{ fill: #fff; }
+                    &:before{ opacity: 1; }
+                }
+            }
         }
     }
 
@@ -277,7 +319,7 @@
     #hidden-menu{ position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 1001; background-color: rgba(#010101, 0.3); display: none;
         
         nav{ width: 100%;
-            &>ul{ position: relative; z-index: 10; transform: translateY(-100%); transition: all 0.3s; list-style: none; background-color: #E71938; height: 100vh; padding: 0; margin: 0; padding: 80px 30px 80px 80px; width: 480px;
+            &>ul{ position: relative; z-index: 10; transform: translateX(-100%); transition: all 0.3s; list-style: none; background-color: #E71938; height: 100vh; padding: 0; margin: 0; padding: 80px 30px 80px 80px; width: 480px;
                 li{ display: flex; align-items: center; justify-content: flex-start; margin-bottom: 10px;}
                 a{font-family: 'Vremena'; letter-spacing: 0.03em; font-weight: 300; line-height: 1.3; font-size: 30px; color: #FFFFFF; position: relative; text-decoration: none; max-width: calc(100% - 40px);
                     &:before{ content: ''; position: absolute; bottom: -2px; height: 1px; left: 0; right: 100%; background-color: #fff; transition: all 0.3s; }
@@ -294,7 +336,7 @@
                     }
                 }
             }
-            .layer2{ position: absolute; left: 0; top: 0; width: 480px; transform: translateY(-100%); transition: all 0.3s; height: 100vh; background-position: center center; background-size: cover; background-repeat: no-repeat;  padding: 80px 50px; z-index: 2; transition: all 0.5s; opacity: 0;
+            .layer2{ position: absolute; left: 0; top: 0; width: 480px; transform: translateX(-100%); transition: all 0.3s; height: 100vh; background-position: center center; background-size: cover; background-repeat: no-repeat;  padding: 80px 50px; z-index: 2; transition: all 0.5s; opacity: 0;
                 &.activate{ left: 480px; opacity: 1; }
                 ul{ list-style: none; padding: 0; margin: 0;
                     li{ margin-bottom: 20px;}
@@ -309,8 +351,8 @@
         }
 
         &.activateMenu{
-            nav > ul{ transform: translateY(0);}
-            .layer2{ transform: translateY(0); }
+            nav > ul{ transform: translateX(0);}
+            .layer2{ transform: translateX(0); }
         }
 
         .closer{width: 20px; height: 20px; position: absolute; z-index: 20; top: 30px; left: 30px; cursor: pointer;
@@ -427,12 +469,12 @@
                 .video-button{ max-width: 460px; width: 100%; text-align: center; }
             }
             .circle-butt{  opacity: 0; transition: all 0.5s;  width: 160px; height: 160px; border-radius: 50%; padding: 20px; margin: 0 auto; display: block; position: relative; overflow: hidden;
-                &:before{ content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.7); opacity: 1; animation-duration: 3s; animation-name: pulseBig; animation-delay: -1s;  animation-iteration-count: infinite; border-radius: 50%; }
-                &:after{ content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.7); opacity: 1; animation-duration: 3s;  animation-name: pulseMid;   animation-iteration-count: infinite; border-radius: 50%;}
+                &:before{ content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.7); opacity: 1; animation-duration: 4s; transition-timing-function: linear; animation-name: pulseBig; animation-delay: 0;  animation-iteration-count: infinite; border-radius: 50%; }
+                &:after{ content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.7); opacity: 1; animation-duration: 4s; transition-timing-function: linear;  animation-name: pulseMid; animation-delay: 2s;  animation-iteration-count: infinite; border-radius: 50%;}
 
                 .insider{ width: 120px; height: 120px; border-radius: 50%; padding: 20px; display: block; position: relative; overflow: hidden;
-                    &:after{ content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.7); opacity: 1; animation-duration: 3s;  animation-name: pulseMid1; animation-delay: 1s;  animation-iteration-count: infinite; border-radius: 50%;}
-                    &:before{ content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.7); opacity: 1; animation-duration: 3s; animation-name: pulseBig1; animation-delay: 0.5s;  animation-iteration-count: infinite; border-radius: 50%; }
+                //    &:after{ content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.7); opacity: 1; animation-duration: 3s;  animation-name: pulseMid1; animation-delay: 1s;  animation-iteration-count: infinite; border-radius: 50%;}
+                //    &:before{ content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.7); opacity: 1; animation-duration: 3s; animation-name: pulseBig1; animation-delay: 0.5s;  animation-iteration-count: infinite; border-radius: 50%; }
                     .triangle{ width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;
                         &:before{ content: ''; transition: all 0.3s;  border-radius: 50%;  position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 1); opacity: 1; }
                         svg{position: relative; z-index: 5;}
@@ -590,7 +632,7 @@
 
     .contact-block-wrap{
         #map{ position: absolute; top: 0; left: 0; bottom: 0; right: 0; }
-        .text-part{ padding: 0 0 0 100px; max-width: 400px; position: relative; z-index: 2;
+        .text-part{ padding: 0 0 0 100px; max-width: 500px; position: relative; z-index: 2;
             .transformed{ position: absolute; left: 0; top: 0; width: 1px; height: 1px; transform: rotate(-90deg); transform-origin: 100% 100%; 
                 span{position: absolute; right: calc(100% + 100px); font-family: 'Gilroy'; line-height: 20px; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #3E3E3E; font-weight: 800;}
                 &:after{ content: ''; position: absolute; top: calc(20px/2 - 2px/2); right: 0; width: 80px; height: 2px; background-color: #E5E5E5; }
@@ -678,7 +720,7 @@
         .image-bottom{ position: absolute; top: 100%; left: 0; transform: translate(-50%, -50%); z-index: 0; pointer-events: none;}
     }
 
-    .footer-part{padding: 25px 0;
+    .footer-part{padding: 25px 0 0;
         .nav-menu{padding: 25px 0;
             ul{ list-style: none; padding: 0; margin: 0; display: flex; align-items: center; justify-content: center;
                 li{width: 160px; text-align: center; position: relative;
@@ -702,7 +744,7 @@
                 i{font-size: 14px; color: #5C5C5C;}
             }
         }
-        .copir{ padding-top: 25px; padding-bottom: 20px; text-align: center; font-family: 'Roboto'; font-weight: 300; line-height: 17px; font-size: 12px; text-align: center; color: #5C5C5C;
+        .copir{ padding-top: 15px; padding-bottom: 15px; text-align: center; font-family: 'Roboto'; font-weight: 300; line-height: 17px; font-size: 12px; text-align: center; color: #5C5C5C;
             a{ color: #5C5C5C; text-decoration: none;}
         }
         .after-text{ text-align: center; font-family: 'Roboto'; font-weight: 300; line-height: 17px; font-size: 12px; text-align: center; color: #5C5C5C;
@@ -710,6 +752,8 @@
                 &:hover{ text-decoration: underline; }
             }
         }
+
+        .siders-info{ display: flex; padding: 15px; align-items: center; justify-content: space-between; }
     }
 
 /* contact-block-wrap */

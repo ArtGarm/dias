@@ -59,6 +59,14 @@
 }
 @media screen and (max-width: 1366px){
 
+    header .popup-butt{ max-width: 150px; }
+    header .popup-butt .butt2{ padding: 10px; }
+
+    header .info-part{ display: block; text-align: center;
+        .place{ margin-bottom: 5px; }
+    }
+    header .tell{ margin: 0; }
+
     .contact-block-wrap .bottom-row .row-follow{ padding: 50px 15px; max-width: 930px; justify-content: flex-start; }
 
     .contact-block-wrap .bottom-row .cubi.cub1{ width: 180px; height: 180px; }
@@ -212,10 +220,12 @@
 
     /* first main */
         header .place, header .tell{display: none;}
-        header .siders .right{ width: auto; }
         header .contein{ padding: 15px 15px 0; }
-        
 
+        header .siders .left{ width: 100%; }
+        header .butter-wrapper{ margin-right: 25px; }
+        header .logo{ width: 100%; }
+        
         .first-wrap.conteiner .siders .imagepart{ position: absolute; top: 0; left: 0; right: 0; bottom: 0;  }
         .first-wrap.conteiner .siders .imagepart{ width: 100%; 
             &:before{ content: ''; z-index: 2; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; background-color: rgba(255,255,255, 0.5); filter: blur(20px); pointer-events: none; }
@@ -454,6 +464,11 @@
     .uslugi-list-item .single-texter{ padding: 0; }
     .uslugi-list-item .text-part h2 { font-size: 26px; }
     .uslugi-list-item .text-part ul li{ margin-bottom: 5px; }
+
+    header .popup-butt{ display: none; }
+    header .contein-search{ margin: 0 0 0 25px; }
+
+    .footer-part .siders-info{ display: block; }
 
 }
 @media screen and (max-width: 666px){
