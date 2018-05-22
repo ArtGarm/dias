@@ -171,5 +171,74 @@ $(document).ready(function(){
 
     });
 
+    /* search */
+
+    // http://easyautocomplete.com/examples
+        var options = {
+            /* for production
+            url: function(phrase) {
+                return "/search.json";
+            },
+        
+            getValue: function(element) {
+                return element.name;
+            },
+            
+
+           url: function(phrase) { 
+                if (phrase !== "") {
+                    return "http://api.duckduckgo.com/?q=" + phrase + "&format=json";    
+                } else {
+                    //duckduckgo doesn't support empty strings
+                    return "http://api.duckduckgo.com/?q=empty&format=json";
+                }
+            },
+        
+            getValue: "Text",
+
+            ajaxSettings: {
+                dataType: "json",
+                method: "POST",
+                data: {
+                    dataType: "json"
+                }
+            },
+        
+            preparePostData: function(data) {
+                data.phrase = $("#ajax-post").val();
+                return data;
+            },        
+            requestDelay: 400
+
+            */
+
+
+           /* for build */
+
+            url: function(phrase) { 
+                if (phrase !== "") {
+                    return "http://api.duckduckgo.com/?q=" + phrase + "&format=json";    
+                } else {
+                    //duckduckgo doesn't support empty strings
+                    return "http://api.duckduckgo.com/?q=empty&format=json";
+                }
+            },
+        
+            getValue: "Text",
+        
+            ajaxSettings: {
+                dataType: "jsonp"
+            },
+        
+            listLocation: "RelatedTopics",
+        
+            requestDelay: 300,
+        
+            theme: "round"
+        };
+            
+        $("#ajax-post").easyAutocomplete(options);
+
+      /* search */
 
 });
