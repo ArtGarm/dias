@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="css/nouislider.css">
     <link rel="stylesheet" href="css/easy-autocomplete.css">
     <link rel="stylesheet" href="css/easy-autocomplete.themes.css">
+    <link rel="stylesheet" href="css/datedropper.css">
+
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     
     <!-- add new file here -->
 
@@ -854,33 +857,50 @@
             </div>
         </div>
     
-        <div id="call-popup">
+        <div id="call-popup" class="universal-pop">
             <form action="ajax.php" class="contact-form">
-                <div class="contact-form-title">
-                    <h5>Lorem ipsum dolor.</h5>
+                <div class="con">
+                    <img src="images/pop-bg.png" alt="">
                 </div>
-                <div class="contact-form-row cfix">
-                    <div class="contact-form-item">
-                        <div class="contact-form-item-input form_row">
-                            <div class="form_input">
-                                <input type="text" name="contact_name" required="required" value="" placeholder="Ваше Имя">
-                            </div>
-                        </div>
+                <div class="title-part">
+                    <h5>Онлайн запис</h5>
+                    <p>Заповніть дані, і наш менеджер зв’яжеться з Вами на протязі дня.</p>
+                </div>
+                <div class="top-part">
+                    <div class="named">Виберіть категорії послуги</div>
+                    <div class="inputer">
+                        <select name="sel1">
+                            <option value="1">Послуги салону красоти 1</option>
+                            <option value="2">Послуги салону красоти 2</option>
+                            <option value="3">Послуги салону красоти 3</option>
+                            <option value="4">Послуги салону красоти 4</option>
+                        </select>
                     </div>
-                    <div class="contact-form-item">
-                        <div class="contact-form-item-input form_row">
-                            <div class="form_input">
-                                <input type="text" name="contact_tel" value="" required="required" placeholder="Ваш номер" class="tel-mask">
-                            </div>
-                        </div>
+                    <div class="inputer">
+                        <select name="sel2">
+                            <option value="1">Апарат Power Shape 1</option>
+                            <option value="2">Апарат Power Shape 2</option>
+                            <option value="3">Апарат Power Shape 3</option>
+                            <option value="4">Апарат Power Shape 4</option>
+                        </select>
                     </div>
                 </div>
-                <div class="contact-form-row cfix">
-                    <div class="contact-form-item">
-                        <button type="submit" class="contact-submit">
-                            <span>Отправить заявку</span>
-                        </button>
+                <div class="top-part">
+                    <div class="named">Ваші дані</div>
+                    <div class="inputer">
+                        <input type="text" name="name" placeholder="Ім’я" required="required">
                     </div>
+                    <div class="inputer">
+                        <input type="tel" name="tel" class="tel-mask" placeholder="+38 ( ___ ) ___ - __ - __" required="required">
+                    </div>
+                    <div class="inputer">
+                        <input type="date" name="date" data-modal="true" data-large-mode="true" data-lang="uk" placeholder="04.06.2018" required="required">
+                    </div>
+                </div>
+                <div class="submiter">
+                    <button type="submit" class="butt">
+                        <span>Записатись</span>
+                    </button>
                 </div>
             </form>
         </div>
@@ -911,7 +931,8 @@
     
     <script type="text/javascript" src="js/plagins/jquery.easy-autocomplete.js" ></script>
     
-    
+    <script type="text/javascript" src="js/plagins/datedropper.js" ></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     
     <script type="text/javascript" src="js/plagins/nouislider.js" ></script>
     

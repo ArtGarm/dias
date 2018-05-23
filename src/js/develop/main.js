@@ -565,6 +565,15 @@ $(document).ready(function(){
 
     /* count-up */
 
+
+    if ( $('input[type=date]').length ){
+
+        $('input[type=date]').dateDropper();
+        
+    }
+
+    AOS.init();
+
     $("select").select2();
 
 });

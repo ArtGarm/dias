@@ -44,6 +44,44 @@ $(document).ready(function(){
         }
     }
 
+    $('.towar-row .pricer .minuso').on('click', function(){
+        var curr = $(this).closest('.counter').find('strong').html() * 1;
+        if ( curr > 1 ) {
+            $(this).closest('.counter').find('strong').html( curr - 1 );
+        } else {
+            $(this).closest('.counter').find('strong').html( '1' );
+        }
+    });
+
+    $('.towar-row .pricer .pluso').on('click', function(){
+
+        var curr = $(this).closest('.counter').find('strong').html() * 1;
+        $(this).closest('.counter').find('strong').html( curr + 1 );
+
+    });
+
+    $('.towar-row .add-to-corzine').on('click', function(e){
+        e.preventDefault();
+
+        var idCart = $(this).closest('.pricer').find('strong').attr('data-id');
+        var count = $(this).closest('.pricer').find('strong').html();
+
+        $.ajax({
+            url : '/wp-admin/admin-ajax.php',
+            data: {
+                action : 'addToCart',
+                id : idCart,
+                count : count
+            },
+            method:'POST',
+            success : function(data){
+                        
+            }
+        });
+
+    })
+
+
     $('.cart-visible').on('click', function(e){
         e.preventDefault();
         

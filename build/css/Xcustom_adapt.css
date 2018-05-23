@@ -129,7 +129,7 @@
     -ms-transform: translateX(-100%);
     -o-transform: translateX(-100%);
     transform: translateX(-100%);
-    z-index: 99;
+    z-index: 9999999;
     background-color: #fff;
     max-width: 260px;
     padding: 10px;
@@ -313,7 +313,16 @@
   .school-fackt-wrap .list-counters .con {
     font-size: 60px; }
   .school-rew-wrap {
-    padding: 40px 0; } }
+    padding: 40px 0; }
+  .added-towar-cart .list-cart .info-part .named {
+    padding-bottom: 20px; }
+  .added-towar-cart .list-cart .con {
+    height: auto;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    background-color: #fff; } }
 
 @media screen and (max-width: 767px) {
   .catalog-wrap .catalog-items-part {
@@ -538,7 +547,27 @@
   .school-rew-wrap .texter blockquote {
     font-size: 16px; }
   .school-rew-wrap .texter {
-    padding-bottom: 15px; } }
+    padding-bottom: 15px; }
+  .universal-pop {
+    padding: 60px; }
+  .universal-pop .con img {
+    max-width: 100vw; }
+  .universal-pop .title-part {
+    text-align: center; }
+    .universal-pop .title-part h5 {
+      margin-bottom: 0;
+      font-size: 32px; }
+  .universal-pop .top-part {
+    padding: 15px 0; }
+  .universal-pop .inputer input {
+    font-size: 16px; }
+  .universal-pop .inputer input {
+    height: 40px; }
+  .universal-pop .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 16px; }
+  .universal-pop .fancybox-close-small {
+    top: 10px;
+    right: 10px; } }
 
 @media screen and (max-width: 666px) {
   .butt3 {
@@ -551,4 +580,6 @@
     text-align: center;
     color: #3e3e3e; }
   .content-part-page .select2-container--default .select2-selection--single .select2-selection__rendered {
-    padding: 8px 45px 7px 25px; } }
+    padding: 8px 45px 7px 25px; }
+  .universal-pop {
+    padding: 40px 30px; } }
