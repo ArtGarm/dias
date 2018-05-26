@@ -43,7 +43,7 @@ $(document).ready(function(){
 
         $('#fullpage').fullpage({
             css3: true,
-            scrollingSpeed: 700,
+            scrollingSpeed: 1200,
             allowPageScroll: true,
             fitToSection: false,
             scrollOverflow: true,
@@ -511,10 +511,12 @@ $(document).ready(function(){
             $('.closer-search').on('click', function(e){
                 e.preventDefault();
                 $('#hidden-search').fadeOut(300);
+                $('body').removeClass('transparenter2');
             });
 
             $('.contein-search').on('click', function(){
                 $('#hidden-search').fadeIn(300);
+                $('body').addClass('transparenter2');
             })
 
         }
@@ -576,6 +578,7 @@ $(document).ready(function(){
 
     $("select").select2();
 
+
 });
 
 $(window).on('load', function(){
@@ -585,6 +588,18 @@ $(window).on('load', function(){
 $( window ).scroll(function() {
 
     /* has-sticky */
+
+    var lastScrollTop = 0;
+
+    var directionScroll = 0;
+
+    var st = $(this).scrollTop();
+
+    if (st > lastScrollTop){
+        directionScroll = 1;
+    } else {
+        directionScroll = -1;
+    }
 
         if( $('.has-sticky').length ){
 
@@ -606,6 +621,16 @@ $( window ).scroll(function() {
                     $(this).find('.imagepart .uppered-contein').css('top', 0 );
                 }
 
+             //   console.log( $(this).offset().top );
+                /*
+                if ( $(this).offset().top +  $(this).height() - $( window ).scrollTop() < 100    &&
+                     $(this).offset().top +  $(this).height() - $( window ).scrollTop() > 0 ){
+                    
+                    var target = $('.has-sticky').eq( $(this).index() ).offset().top;
+                    console.log(  )
+                    $('html, body').animate({scrollTop:target},500);
+                }
+                */
             });
 
         }

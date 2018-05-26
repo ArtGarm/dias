@@ -105,8 +105,9 @@ function validationCall(form){
         data: formSur,
         method:'POST',
         success : function(data){
-            if ( data.trim() == 'true') {
+            if ( data.trim() == true) {
                 thisForm.trigger("reset");
+                $.fancybox.close();
                 popNext("#call_success");
             }
             else {
@@ -155,7 +156,7 @@ function sendCommentStars( id , counter ){
         method:'POST',
         success : function(data){
 
-            if ( data.trim() == 'true') {
+            if ( data.trim() == true) {
 
                 $('.counter-rew .rew-item').each( function(){
                     

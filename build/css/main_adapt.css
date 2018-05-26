@@ -94,7 +94,7 @@
     display: block;
     text-align: center; }
     header .info-part .place {
-      margin-bottom: 5px; }
+      display: none; }
   header .tell {
     margin: 0; }
   .contact-block-wrap .bottom-row .row-follow {
@@ -379,6 +379,8 @@
     padding: 50px 25px; }
   #hidden-menu nav > ul a {
     font-size: 20px; }
+  #hidden-menu nav .layer2 {
+    width: 50%; }
   .uslugi-list-item .after-button.space-between {
     padding: 0;
     -webkit-flex-wrap: wrap;

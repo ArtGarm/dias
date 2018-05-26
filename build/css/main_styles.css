@@ -1139,11 +1139,7 @@ header {
     header .butter-wrapper.active {
       z-index: 1002; }
       header .butter-wrapper.active .butter {
-        -webkit-transform: translate(-10px, -10px);
-        -moz-transform: translate(-10px, -10px);
-        -ms-transform: translate(-10px, -10px);
-        -o-transform: translate(-10px, -10px);
-        transform: translate(-10px, -10px); }
+        /* transform: translate(-10px, -10px); */ }
         header .butter-wrapper.active .butter span {
           background-color: #fff; }
           header .butter-wrapper.active .butter span:nth-child(1) {
@@ -1152,9 +1148,9 @@ header {
             -ms-transform: rotate(45deg);
             -o-transform: rotate(45deg);
             transform: rotate(45deg);
-            top: -webkit-calc(50% - 8px);
-            top: -moz-calc(50% - 8px);
-            top: calc(50% - 8px); }
+            top: -webkit-calc(50% - 1px);
+            top: -moz-calc(50% - 1px);
+            top: calc(50% - 1px); }
           header .butter-wrapper.active .butter span:nth-child(2) {
             opacity: 0; }
           header .butter-wrapper.active .butter span:nth-child(3) {
@@ -1163,9 +1159,9 @@ header {
             -ms-transform: rotate(-45deg);
             -o-transform: rotate(-45deg);
             transform: rotate(-45deg);
-            top: -webkit-calc(50% - 8px);
-            top: -moz-calc(50% - 8px);
-            top: calc(50% - 8px); }
+            top: -webkit-calc(50% - 1px);
+            top: -moz-calc(50% - 1px);
+            top: calc(50% - 1px); }
   header .logo a {
     display: block;
     text-decoration: none; }
@@ -1521,8 +1517,8 @@ header {
       height: 100vh;
       padding: 0;
       margin: 0;
-      padding: 80px 30px 80px 80px;
-      width: 480px; }
+      padding: 100px 30px 80px 110px;
+      width: 520px; }
       #hidden-menu nav > ul li {
         display: -webkit-box;
         display: -webkit-flex;
@@ -1616,7 +1612,7 @@ header {
       position: absolute;
       left: 0;
       top: 0;
-      width: 480px;
+      width: 520px;
       -webkit-transform: translateX(-100%);
       -moz-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
@@ -1631,7 +1627,7 @@ header {
       -moz-background-size: cover;
       background-size: cover;
       background-repeat: no-repeat;
-      padding: 80px 50px;
+      padding: 100px 50px 80px;
       z-index: 2;
       -webkit-transition: all 0.5s;
       -o-transition: all 0.5s;
@@ -1639,7 +1635,7 @@ header {
       transition: all 0.5s;
       opacity: 0; }
       #hidden-menu nav .layer2.activate {
-        left: 480px;
+        left: 520px;
         opacity: 1; }
       #hidden-menu nav .layer2 ul {
         list-style: none;
