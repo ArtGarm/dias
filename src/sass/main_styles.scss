@@ -6,7 +6,7 @@
         &:before{ content: ''; z-index: 1; background: linear-gradient(118.78deg, #E71938 23.68%, #C4037D 78.9%); opacity: 0.5; filter: blur(15px); border-radius: 30px; position: absolute; top: 8px; bottom: -2px; left: 5px; right: 5px; transition: all 0.5s;  }
         &:hover{
             &:after{ background: linear-gradient(360deg, rgba(0, 0, 0, 0.136) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(117.9deg, #E71938 20.03%, #C4037D 96.91%); }
-            &:before{ background: linear-gradient(118.78deg, #E71938 23.68%, #C4037D 78.9%); opacity: 0.5;  }
+            &:before{ background: linear-gradient(118.78deg, #E71938 23.68%, #C4037D 78.9%); opacity: 1;  }
         }
     }
 
@@ -694,6 +694,7 @@
         }
         .bottom-row{ 
             .row-follow{ padding: 100px 0; max-width: 1360px; margin: 0 auto; flex-wrap: wrap; display: flex; align-items: center; justify-content: space-around;
+                /*
                 &.traslater{
                     .cubi:nth-child(4){ transform: translateX(-100%); }
                     .cubi:nth-child(5){ transform: translateX(100%); }
@@ -703,6 +704,7 @@
                         .list-frame{  }
                     }
                 }
+                */
             }
             .cubi{ text-decoration: none; display: flex; align-items: center; justify-content: center; background-color: #F2F2F2; transition: all 0.3s; position: relative;
                 &.cub1{ width: 170px; height: 170px; }
@@ -733,10 +735,10 @@
                 h3{ font-family: 'Vremena'; line-height: 1.2; font-size: 34px; color: #3E3E3E; }
                 p{font-family: 'Roboto'; font-weight: 300; line-height: 1.3; font-size: 14px; letter-spacing: 0.02em; color: #9E9E9E;}
             }
-            .framelist-cubi{display: block; transition: all 0.3s; position: relative;  pointer-events: none;}
-            .list-frame{ position: absolute; top: -100%; left: 0; right: -50%; bottom: 0; padding: 10px;
-                .frame{ opacity: 0; text-align: center; transform: translateY(-100%); transition: all 0.5s; position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: auto;
-                    &.active{ display: block; opacity: 1; transform: translateY(0%); }
+            .framelist-cubi{display: block; transition: all 0.3s; position: relative;}
+            .list-frame{ position: absolute; top: 5px; left: 5px; right: 5px; bottom: 5px; 
+                .frame{ opacity: 0; text-align: center;  transition: all 0.5s;  overflow: auto; top: 0; height: auto; display: none; max-height: 100%;
+                    &.active{ display: block; opacity: 1; display: block; }
                 }
                 iframe{ margin: 0 auto; }
             }

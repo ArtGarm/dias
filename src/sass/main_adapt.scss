@@ -75,19 +75,19 @@
     .contact-block-wrap .bottom-row .cubi:nth-child(5) { width: 100%; order: 1; text-align: center; height: auto; padding: 15px; }
     .contact-block-wrap .bottom-row .row-follow.traslater .cubi:nth-child(5){ transform: none; }
 
-    .contact-block-wrap .bottom-row .list-frame{ top: calc(-100% + 10px); }
+
 
     .contact-block-wrap .bottom-row .cubi.cub2.framelist-cubi{ order: 99; width: 100%; height: 180px; }
 
     .contact-block-wrap .bottom-row .list-frame{ right: 0; overflow: hidden; }
-
+/*
     .contact-block-wrap .bottom-row .row-follow.traslater {
         .cubi:nth-child(4){transform: none;}
         .cubi:nth-child(10){ transform: translateY(-100%); }
         .cubi:nth-child(6){ transform: translateY(-100%); }
         .cubi:nth-child(8){ transform: translateY(-100%); }
     }
-
+*/
     .contact-block-wrap .bottom-row .cubi:nth-child(1){ order: 2; }
     .contact-block-wrap .bottom-row .cubi:nth-child(2){ order: 3; }
     .contact-block-wrap .bottom-row .cubi:nth-child(3){ order: 4; }
@@ -212,10 +212,16 @@
 }
 @media screen and (max-width: 992px){
 
-    .contact-block-wrap .bottom-row .row-follow{ display: none; }
-    .contact-block-wrap .bottom-row .cubi.cub2.framelist-cubi{ display: block; width: 100%; height: auto;; }
+    .contact-block-wrap .bottom-row .cubi.cub1{ width: 140px; height: 140px;; 
+        &:nth-child(1){ display: none; }
+    }
 
-    .contact-block-wrap .bottom-row .cubi.cub1{ width: calc(100vw/5 - 30px/5); height: calc(100vw/5 - 30px/5); }
+    .contact-block-wrap .bottom-row .row-follow{ width: calc(140px*5 + 30px); }
+    .contact-block-wrap .bottom-row .cubi.cub2.framelist-cubi{ display: block; width: 100%; height: auto; padding: 15px; }
+    .contact-block-wrap .bottom-row .list-frame{ position: static; }
+    .contact-block-wrap .bottom-row .list-frame { display: flex; align-items: flex-start; justify-content: center; flex-wrap: wrap;
+        .frame{ overflow: visible; display: block; opacity: 1; padding: 10px; }
+    }
     .contact-block-wrap .bottom-row .list-frame .frame{ max-height: none; }
 
     .butt2, .butt3, .butt4{ padding: 12px 25px; }
@@ -488,6 +494,10 @@
     #hidden-search .contein .easy-autocomplete.eac-round ul{ border-radius: 20px; }
     #hidden-search .contein .easy-autocomplete.eac-round ul li { font-size: 14px; padding: 8px 20px; }
 
+
+    .contact-block-wrap .bottom-row .row-follow{ width: calc(80px * 5 + 30px); }
+    .contact-block-wrap .bottom-row .cubi.cub2.framelist-cubi{ display: block; display: none; }
+    .contact-block-wrap .bottom-row .cubi:nth-child(7){ display: none; }
 }
 
 @media screen and (max-width: 666px){
@@ -507,6 +517,9 @@
 
 }
 @media screen and (max-width: 479px){
+
+    .contact-block-wrap .bottom-row .row-follow{ width: calc(60px * 5 + 20px);     padding: 25px 10px 5px; }
+    .contact-block-wrap .bottom-row .cubi.cub1{ width: 60px; height: 60px;; }
 
 }
 @media screen and (max-width: 320px){

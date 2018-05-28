@@ -43,7 +43,7 @@ $(document).ready(function(){
 
         $('#fullpage').fullpage({
             css3: true,
-            scrollingSpeed: 1200,
+            scrollingSpeed: 1000,
             allowPageScroll: true,
             fitToSection: false,
             scrollOverflow: true,
@@ -67,9 +67,7 @@ $(document).ready(function(){
             }
         });
 
-    } else {
-      //  jQuery.scrollSpeed(200, 800, 'easeOutCubic');
-    }
+    } 
 
     /* first on main */
         if ( $('#carousel').length ){
@@ -621,16 +619,6 @@ $( window ).scroll(function() {
                     $(this).find('.imagepart .uppered-contein').css('top', 0 );
                 }
 
-             //   console.log( $(this).offset().top );
-                /*
-                if ( $(this).offset().top +  $(this).height() - $( window ).scrollTop() < 100    &&
-                     $(this).offset().top +  $(this).height() - $( window ).scrollTop() > 0 ){
-                    
-                    var target = $('.has-sticky').eq( $(this).index() ).offset().top;
-                    console.log(  )
-                    $('html, body').animate({scrollTop:target},500);
-                }
-                */
             });
 
         }
