@@ -63,7 +63,7 @@
     header .popup-butt .butt2{ padding: 10px; }
 
     header .info-part{ display: block; text-align: center;
-        .place{ margin-bottom: 5px; }
+        .place{ display: none; }
     }
     header .tell{ margin: 0; }
 
@@ -194,6 +194,7 @@
     #hidden-menu nav .layer2.activate { left: calc(100%/2); width: 50%; }
     #hidden-menu nav .layer2{ padding: 50px 25px;  }
     #hidden-menu nav > ul a{ font-size: 20px; }
+    #hidden-menu nav .layer2{  width: 50%; }
     
 
     .uslugi-list-item .after-button.space-between{ padding: 0; flex-wrap: wrap; justify-content: space-around;

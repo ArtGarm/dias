@@ -1821,6 +1821,12 @@ body {
     overflow: hidden; }
     body.transparenter:before {
       opacity: 1; }
+  body.transparenter2 {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; }
+    body.transparenter2:before {
+      opacity: 0; }
 
 .cart-visible {
   position: fixed;
@@ -2078,20 +2084,25 @@ body {
     padding: 20px 0;
     position: relative; }
     .cart-hidden .list-cart .contein-item .deleter {
-      width: 10px;
-      height: 10px;
+      width: 22px;
+      height: 22px;
       position: absolute;
       top: 8px;
       right: 5px;
-      cursor: pointer; }
+      cursor: pointer;
+      border: 1px solid #E71938;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%; }
       .cart-hidden .list-cart .contein-item .deleter:before {
         content: '';
+        left: 4px;
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         -o-transform: rotate(45deg);
         transform: rotate(45deg);
-        width: 14px;
+        width: 12px;
         height: 2px;
         -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
@@ -2103,12 +2114,13 @@ body {
         top: calc(50% - 1px); }
       .cart-hidden .list-cart .contein-item .deleter:after {
         content: '';
+        left: 4px;
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
-        width: 14px;
+        width: 12px;
         height: 2px;
         -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
@@ -2468,20 +2480,25 @@ body {
     padding: 20px 0;
     position: relative; }
     .added-towar-cart .list-cart .contein-item .deleter {
-      width: 10px;
-      height: 10px;
+      width: 22px;
+      height: 22px;
       position: absolute;
       top: 8px;
       right: 5px;
-      cursor: pointer; }
+      cursor: pointer;
+      border: 1px solid #E71938;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%; }
       .added-towar-cart .list-cart .contein-item .deleter:before {
         content: '';
+        left: 4px;
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         -o-transform: rotate(45deg);
         transform: rotate(45deg);
-        width: 14px;
+        width: 12px;
         height: 2px;
         -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
@@ -2493,12 +2510,13 @@ body {
         top: calc(50% - 1px); }
       .added-towar-cart .list-cart .contein-item .deleter:after {
         content: '';
+        left: 4px;
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
-        width: 14px;
+        width: 12px;
         height: 2px;
         -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
@@ -2992,3 +3010,8 @@ div.datedropper.primary:before, div.datedropper.primary .pick-submit, div.datedr
   background: linear-gradient(118.78deg, #E71938 23.68%, #C4037D 78.9%); }
 
 /* universal-pop */
+/* call_success */
+#call_success .title-part {
+  text-align: center; }
+
+/* call_success */
