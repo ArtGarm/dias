@@ -279,4 +279,19 @@ $(document).ready(function(){
 
       /* search */
 
+
+      $.scrollify({
+        section : ".has-sticky",
+        updateHash: false,
+        before:function(index, sections) {
+            console.log( sections[index]  );
+            $('.has-sticky').removeClass('active');
+            sections[index].addClass('active');
+        },
+        afterRender:function( ) {
+            $('.has-sticky').removeClass('active');
+            $.scrollify.current().addClass('active');
+        }
+        
+      });
 });

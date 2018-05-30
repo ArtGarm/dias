@@ -929,6 +929,16 @@
   background-size: cover;
   position: absolute; }
 
+.has-sticky .conteiner .siders .uppered-contein {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s; }
+
+.has-sticky.active .conteiner .siders .uppered-contein {
+  opacity: 1; }
+
 /* first wrap  */
 /* header */
 header {

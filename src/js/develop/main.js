@@ -594,9 +594,9 @@ $( window ).scroll(function() {
     var st = $(this).scrollTop();
 
     if (st > lastScrollTop){
-        directionScroll = 1;
+        directionScroll = 0;
     } else {
-        directionScroll = -1;
+        directionScroll = 1;
     }
 
         if( $('.has-sticky').length ){
@@ -604,19 +604,28 @@ $( window ).scroll(function() {
             $('.has-sticky').each(function(){
 
                 if ( $( window ).scrollTop() + $(window).height() >= $(this).offset().top ){
-                    var dis = $( window ).scrollTop() -  $(this).offset().top + $(window).height() - ($(this).find('.imagepart .uppered-contein').height() + $('.uppered-contein').css('padding-top').replace("px", "")*2 ) ;
+
+                    var dis = $( window ).scrollTop() -  $(this).offset().top + $(window).height() - ($(this).find('.imagepart .uppered-contein').height() + $('.uppered-contein').css('padding-top').replace("px", "")*2 );
+
+                    if ( dis  <  $(this).find('.imagepart .uppered-contein').height() + $('.uppered-contein').css('padding-top').replace("px", "")*2 ) {
+                        dis = $(this).find('.imagepart .uppered-contein').height() + $('.uppered-contein').css('padding-top').replace("px", "")*2;
+                    }
 
                     $(this).find('.imagepart .uppered-contein').css('top', dis );
 
                     if ( $( window ).scrollTop() + $(window).height()  >= $(this).offset().top +  $(this).height()  ){
 
-                        var discleimad = $(this).height()  - ($(this).find('.imagepart .uppered-contein').height() + $('.uppered-contein').css('padding-top').replace("px", "")*2 ) ;
+                        var discleimad = $(this).height()  - ($(this).find('.imagepart .uppered-contein').height() + $('.uppered-contein').css('padding-top').replace("px", "")*2 );
+
+                        if ( discleimad  <  $(this).find('.imagepart .uppered-contein').height() + $('.uppered-contein').css('padding-top').replace("px", "")*2 ) {
+                            discleimad = $(this).find('.imagepart .uppered-contein').height() + $('.uppered-contein').css('padding-top').replace("px", "")*2;
+                        }
 
                         $(this).find('.imagepart .uppered-contein').css('top', discleimad );
                     }
 
                 } else {
-                    $(this).find('.imagepart .uppered-contein').css('top', 0 );
+                    $(this).find('.imagepart .uppered-contein').css('top', $(window).height() );
                 }
 
             });

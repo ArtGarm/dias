@@ -383,6 +383,8 @@
     padding: 0; } }
 
 @media screen and (max-width: 992px) {
+  .uslugi-list-item.has-sticky .pricer-item {
+    padding-bottom: 120px; }
   .contact-block-wrap .bottom-row .cubi.cub1 {
     width: 140px;
     height: 140px; }
@@ -677,7 +679,9 @@
     left: 0;
     right: 0;
     max-width: 100%;
-    padding: 15px; }
+    padding: 15px;
+    top: auto !important;
+    bottom: 0; }
   .conteiner .siders .uppered-contein .sider-row {
     display: block;
     text-align: center; }
